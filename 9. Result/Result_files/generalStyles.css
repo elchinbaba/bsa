@@ -1,0 +1,31 @@
+body {
+	padding: 80px 0px 5px 12%;
+	font-family: 'Gilroy-Light';
+	overflow-x: hidden;
+	overflow-y: auto;
+	background: #fff;
+}
+
+body * {
+	font-family: 'Gilroy-Light';
+}
+
+@media (min-width: 1630px) and (max-width: 1950px) {
+	body {
+		padding-left: 12%;
+    }
+}
+
+@media (max-width: 1630px) {
+	body {
+		padding-left: 7%;
+    }
+}
+
+@media (max-width: 900px) {
+	body {
+		flex-direction: column;
+		align-items: flex-start;
+		padding-top: 20px;
+    }
+}

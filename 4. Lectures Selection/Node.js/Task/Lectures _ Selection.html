@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://study.binary-studio.com/cabinet/lectures-selection/NodeJS/task -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><style type="text/css">svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.225em;
+}
+.svg-inline--fa.fa-w-1 {
+  width: 0.0625em;
+}
+.svg-inline--fa.fa-w-2 {
+  width: 0.125em;
+}
+.svg-inline--fa.fa-w-3 {
+  width: 0.1875em;
+}
+.svg-inline--fa.fa-w-4 {
+  width: 0.25em;
+}
+.svg-inline--fa.fa-w-5 {
+  width: 0.3125em;
+}
+.svg-inline--fa.fa-w-6 {
+  width: 0.375em;
+}
+.svg-inline--fa.fa-w-7 {
+  width: 0.4375em;
+}
+.svg-inline--fa.fa-w-8 {
+  width: 0.5em;
+}
+.svg-inline--fa.fa-w-9 {
+  width: 0.5625em;
+}
+.svg-inline--fa.fa-w-10 {
+  width: 0.625em;
+}
+.svg-inline--fa.fa-w-11 {
+  width: 0.6875em;
+}
+.svg-inline--fa.fa-w-12 {
+  width: 0.75em;
+}
+.svg-inline--fa.fa-w-13 {
+  width: 0.8125em;
+}
+.svg-inline--fa.fa-w-14 {
+  width: 0.875em;
+}
+.svg-inline--fa.fa-w-15 {
+  width: 0.9375em;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+.svg-inline--fa.fa-w-17 {
+  width: 1.0625em;
+}
+.svg-inline--fa.fa-w-18 {
+  width: 1.125em;
+}
+.svg-inline--fa.fa-w-19 {
+  width: 1.1875em;
+}
+.svg-inline--fa.fa-w-20 {
+  width: 1.25em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-border {
+  height: 1.5em;
+}
+.svg-inline--fa.fa-li {
+  width: 2em;
+}
+.svg-inline--fa.fa-fw {
+  width: 1.25em;
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: #ff253a;
+  border-radius: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  height: 1.5em;
+  line-height: 1;
+  max-width: 5em;
+  min-width: 1.5em;
+  overflow: hidden;
+  padding: 0.25em;
+  right: 0;
+  text-overflow: ellipsis;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: 0;
+  right: 0;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: 0;
+  left: 0;
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: 0;
+  right: auto;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-lg {
+  font-size: 1.3333333333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit;
+}
+
+.fa-border {
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
+}
+
+.fa-pull-left {
+  float: left;
+}
+
+.fa-pull-right {
+  float: right;
+}
+
+.fa.fa-pull-left,
+.fas.fa-pull-left,
+.far.fa-pull-left,
+.fal.fa-pull-left,
+.fab.fa-pull-left {
+  margin-right: 0.3em;
+}
+.fa.fa-pull-right,
+.fas.fa-pull-right,
+.far.fa-pull-right,
+.fal.fa-pull-right,
+.fab.fa-pull-right {
+  margin-left: 0.3em;
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical,
+:root .fa-flip-both {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: #fff;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse {
+  color: #fff;
+}</style><link rel="manifest" href="https://study.binary-studio.com/manifest.json"><link rel="shortcut icon" href="https://study.binary-studio.com/favicon.ico"><link rel="stylesheet" href="./Lectures _ Selection_files/font.css"><title>Lectures | Selection</title><link href="./Lectures _ Selection_files/62.f01b737b.chunk.css" rel="stylesheet"><link href="./Lectures _ Selection_files/main.3ccc80b2.chunk.css" rel="stylesheet"><style type="text/css"></style><script type="text/javascript" id="www-widgetapi-script" src="./Lectures _ Selection_files/www-widgetapi.js.download" async=""></script><script charset="utf-8" src="./Lectures _ Selection_files/10.c7d411da.chunk.js.download"></script><link rel="stylesheet" type="text/css" href="./Lectures _ Selection_files/HomePage.872a304b.chunk.css"><script charset="utf-8" src="./Lectures _ Selection_files/HomePage.e89e13a5.chunk.js.download"></script><script charset="utf-8" src="./Lectures _ Selection_files/4.e4e77d26.chunk.js.download"></script><link rel="stylesheet" type="text/css" href="./Lectures _ Selection_files/UserLayout.c5942216.chunk.css"><script charset="utf-8" src="./Lectures _ Selection_files/UserLayout.84bdbd6e.chunk.js.download"></script><style data-emotion="css"></style><script charset="utf-8" src="./Lectures _ Selection_files/1.01e237dd.chunk.js.download"></script><script charset="utf-8" src="./Lectures _ Selection_files/66.7154ede6.chunk.js.download"></script><link rel="stylesheet" type="text/css" href="./Lectures _ Selection_files/UserRouteComponent.d3498c7b.chunk.css"><script charset="utf-8" src="./Lectures _ Selection_files/UserRouteComponent.e96f2d64.chunk.js.download"></script><script charset="utf-8" src="./Lectures _ Selection_files/2.e20cc298.chunk.js.download"></script><link rel="stylesheet" type="text/css" href="./Lectures _ Selection_files/LectureInfo.eb1e9892.chunk.css"><script charset="utf-8" src="./Lectures _ Selection_files/LectureInfo.b432ec64.chunk.js.download"></script><script referrerpolicy="origin" type="application/javascript" id="tiny-script_85603955511659805266304" src="./Lectures _ Selection_files/tinymce.min.js.download"></script><script type="text/javascript" charset="utf8" async="" src="./Lectures _ Selection_files/iframe_api"></script><link rel="stylesheet" type="text/css" href="./Lectures _ Selection_files/Task.97360551.chunk.css"><script charset="utf-8" src="./Lectures _ Selection_files/Task.1cbc4074.chunk.js.download"></script></head><body cz-shortcut-listen="true"><span style="visibility:hidden;font-family:&#39;Space Mono&#39;"></span><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div class="header"><div class="left-side"><div class="header-logo"><svg width="70" height="70" viewBox="0 0 105 99"><g fill="none" fill-rule="evenodd"><path d="M59.927 76.881c.267.616-.427 1.205-.99.838L29.31 58.376c-2.259-1.299-1.743-3.772 0-4.526l16.585-6.125c.65-.24 1.37.07 1.647.703l12.386 28.453z" fill="#FFC712"></path><path d="M87.193 73.214L68.999 81.09c-1.16.503-2.546-.125-3.1-1.402L42.465 25.565c-.555-1.28-.061-2.726 1.101-3.23l18.193-7.876c1.16-.502 2.548.125 3.101 1.402l23.436 54.124c.554 1.28.06 2.726-1.102 3.23" fill="#00ADEE"></path><path d="M39.682 30.034c1.279 2.9 4.213 9.704 5.36 12.368a1.137 1.137 0 01-.646 1.516l-12.679 4.757a.678.678 0 01-.859-.904l7.633-17.73a.65.65 0 011.191-.007M40.351 70.35l-13.924-9.294a1.066 1.066 0 00-1.567.46l-7.976 18.206c-.404.924.53 1.864 1.455 1.465l21.889-9.473a.78.78 0 00.123-1.363" fill="#EC1848"></path><path d="M40.351 70.35l-13.924-9.294a1.066 1.066 0 00-1.567.46l9.402 12.78 5.966-2.582a.78.78 0 00.123-1.363" fill="#C22035"></path></g></svg></div><div class="academy-selector"><div class="collapse-icon-wrapper"><svg width="24" height="24" viewBox="0 0 24 24"><defs><path d="M4 13a1 1 0 010-2h16a1 1 0 010 2H4zm0-6a1 1 0 110-2h16a1 1 0 010 2H4zm0 12a1 1 0 010-2h16a1 1 0 010 2H4z" id="Menu_svg__a"></path></defs><g fill="none" fill-rule="evenodd"><mask id="Menu_svg__b" fill="#fff"><use xlink:href="#Menu_svg__a"></use></mask><use fill-opacity="0" fill="#051033" fill-rule="nonzero" xlink:href="#Menu_svg__a"></use><g mask="url(#Menu_svg__b)" fill="#182C4F"><path d="M0 0h24v24H0z"></path></g></g></svg></div><div class="select-delimiter"><div class="select-wrapper"><div class="select-container css-dyr6gj-container"><div class="select__control css-nwyodx-control"><div class="select__value-container select__value-container--has-value css-1hwfws3"><div class="select__single-value css-stnf9b-singleValue">Academy 2022</div><input id="react-select-2-input" readonly="" tabindex="0" aria-autocomplete="list" class="css-62g3xt-dummyInput" value=""></div><div class="select__indicators css-1wy0on6"><div aria-hidden="true" class="select__indicator select__dropdown-indicator css-v88xec-indicatorContainer"><svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" class="css-19bqh2r"><path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path></svg></div></div></div></div></div></div></div><div class="spec-name">JS</div></div><div class="right-side"><div class="user-panel"><div class="dropdown-header"><div class="avatar-component-container"><div class="avatar-component  round"><span>EB</span></div></div><p class="user-name">Elchin Babali</p></div><div class="popup"><svg width="24" height="24" viewBox="0 0 24 24" class="arrow"><defs><path d="M12 13.586l4.293-4.293a1 1 0 011.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 011.414-1.414L12 13.586z" id="Down_arrow_svg__a"></path></defs><g fill="none" fill-rule="evenodd"><mask id="Down_arrow_svg__b" fill="#fff"><use xlink:href="#Down_arrow_svg__a"></use></mask><use fill-opacity="0" fill="#051033" fill-rule="nonzero" xlink:href="#Down_arrow_svg__a"></use><g mask="url(#Down_arrow_svg__b)" fill="#182C4F"><path d="M0 0h24v24H0z"></path></g></g></svg></div></div><div class="referral-wrapper"><svg width="24" height="23" viewBox="0 0 24 23" fill="none" class="referral-icon"><title>Generate referral link</title><path opacity="0.99" d="M5.99988 20.9341C5.99988 20.9282 5.99988 20.9163 5.99988 20.9103C5.99988 20.8925 5.99988 20.8806 5.99988 20.8628C5.99988 16.1624 9.80892 12.3474 14.5153 12.3474C19.2216 12.3474 23.0306 16.1565 23.0306 20.8628" stroke="#00AEEF" stroke-width="1.06667" stroke-miterlimit="10" stroke-linecap="round"></path><path d="M14.5449 4.18847C16.5296 4.18847 18.146 5.80479 18.146 7.78953C18.146 9.77427 16.5296 11.3906 14.5449 11.3906C12.5602 11.3906 10.9438 9.77427 10.9438 7.78953C10.9438 5.80479 12.5602 4.18847 14.5449 4.18847ZM14.5449 3C11.9006 3 9.75537 5.14519 9.75537 7.78953C9.75537 10.4339 11.9006 12.5791 14.5449 12.5791C17.1892 12.5791 19.3344 10.4339 19.3344 7.78953C19.3344 5.14519 17.1892 3 14.5449 3Z" fill="#00AEEF"></path><path d="M4.93007 12.1062C7.10065 12.1062 8.86025 10.3466 8.86025 8.17604C8.86025 6.00545 7.10065 4.24585 4.93007 4.24585C2.75948 4.24585 0.999878 6.00545 0.999878 8.17604C0.999878 10.3466 2.75948 12.1062 4.93007 12.1062Z" stroke="#00AEEF" stroke-width="1.06667" stroke-miterlimit="10"></path><path d="M3.34998 8.21167L6.50816 8.21167" stroke="#00AEEF" stroke-width="1.06667" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4.92932 6.63257L4.92932 9.79076" stroke="#00AEEF" stroke-width="1.06667" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div class="bell-wrapper"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="bell-icon"><g clip-path="url(#clip0_3_558)"><path d="M7.63329 22.165C5.83476 21.2614 5.10683 19.0634 6.01046 17.2649C6.17153 16.9443 6.5625 16.8148 6.88309 16.9759C7.20367 17.1369 7.33315 17.5279 7.17208 17.8485C6.5901 19.0068 7.05858 20.4214 8.21692 21.0034C9.37508 21.5853 10.7898 21.1169 11.3718 19.9586C11.5329 19.638 11.9238 19.5085 12.2444 19.6696C12.565 19.8306 12.6945 20.2216 12.5334 20.5422C11.6298 22.3407 9.43181 23.0686 7.63329 22.165Z" fill="#00AEEF" stroke="white" stroke-width="0.2"></path><path d="M2.2693 13.9654L2.26855 13.9656C2.2093 13.9803 2.09984 14.023 2.03661 14.1489C1.9508 14.3197 2.02149 14.5329 2.19236 14.6188L16.9361 22.0264C17.1068 22.1122 17.3201 22.0416 17.4059 21.8708C17.4689 21.7454 17.4386 21.6323 17.4151 21.5773C16.4753 19.3749 16.5527 16.8867 17.6263 14.7498L18.878 12.2585C20.2644 9.49899 19.1477 6.12695 16.3882 4.74051C13.6286 3.354 10.2565 4.47074 8.8701 7.23022L7.61837 9.72159C6.54476 11.8585 4.59457 13.4058 2.2693 13.9654ZM16.3524 23.188L1.60873 15.7804C0.795655 15.3719 0.466563 14.3782 0.874984 13.5653C1.09176 13.1338 1.48475 12.8198 1.95346 12.7038C3.91774 12.2314 5.55507 10.9326 6.45675 9.13796L7.70848 6.64659C9.41656 3.24693 13.572 1.87072 16.9718 3.57889C20.3715 5.28697 21.7477 9.44243 20.0396 12.8421L18.7879 15.3335C17.8862 17.1281 17.8214 19.217 18.6092 21.0644C18.8017 21.5206 18.7841 22.0233 18.5675 22.4545C18.1591 23.2674 17.1653 23.5965 16.3524 23.188Z" fill="#00AEEF" stroke="white" stroke-width="0.2"></path><path d="M16.3882 4.74053C16.0676 4.57946 15.9381 4.18849 16.0992 3.86791L17.446 1.18723C17.6071 0.866647 17.998 0.737164 18.3186 0.898235C18.6392 1.0593 18.7687 1.45028 18.6076 1.77086L17.2608 4.45154C17.0997 4.77212 16.7087 4.9016 16.3882 4.74053Z" fill="#00AEEF" stroke="white" stroke-width="0.2"></path></g><defs><clippath id="clip0_3_558"><rect width="24" height="24" fill="white"></rect></clippath></defs></svg></div></div></div><div class="user-layout"> <div class="user-layout-sidebar"><div class="cabinet-sidenav"><div class="sidebar-stages"><div><a class="sidenav-item" href="https://study.binary-studio.com/cabinet/welcome"><svg width="22" height="21" viewBox="0 0 22 21" fill="#00AEEF"><path d="M18.3249 3.07264C14.2286 -1.02405 7.56399 -1.02405 3.4685 3.07165C-0.627785 7.16734 -0.627389 13.8321 3.4689 17.9286C7.56399 22.0241 14.2286 22.0241 18.3245 17.9278C22.4204 13.8321 22.4202 7.16773 18.3249 3.07264ZM17.1786 16.7824C13.7148 20.2462 8.07841 20.2466 4.61434 16.7828C1.14969 13.3183 1.15008 7.68135 4.61434 4.21749C8.07821 0.753822 13.7144 0.753427 17.179 4.21789C20.6429 7.68175 20.6425 13.3187 17.1786 16.7824ZM6.9781 7.657C6.9781 6.97904 7.52796 6.42918 8.20592 6.42918C8.88368 6.42918 9.43354 6.97884 9.43354 7.657C9.43354 8.33536 8.88368 8.88502 8.20592 8.88502C7.52796 8.88502 6.9781 8.33536 6.9781 7.657ZM12.5454 7.657C12.5454 6.97904 13.0956 6.42918 13.7736 6.42918C14.4513 6.42918 15.0012 6.97884 15.0012 7.657C15.0012 8.33536 14.4515 8.88502 13.7736 8.88502C13.0956 8.88502 12.5454 8.33536 12.5454 7.657ZM15.4481 12.6857C14.6872 14.4453 12.9051 15.5823 10.9085 15.5823C8.86883 15.5823 7.07631 14.4396 6.34172 12.671C6.21579 12.3683 6.35934 12.0206 6.66249 11.8947C6.73694 11.864 6.81416 11.8493 6.89019 11.8493C7.12304 11.8493 7.34401 11.9869 7.43886 12.2156C7.98871 13.5395 9.35058 14.3944 10.9085 14.3944C12.4311 14.3944 13.7851 13.5389 14.3577 12.2142C14.488 11.9131 14.8376 11.7743 15.1386 11.9048C15.4396 12.0352 15.5784 12.3847 15.4481 12.6857Z"></path></svg><span class="link-text">Welcome</span></a></div><div><a class="sidenav-item" href="https://study.binary-studio.com/cabinet/materials-for-preparation"><svg width="20" height="20" viewBox="0 0 20 20" fill="#00AEEF"><g clip-path="url(#clip0_5_701)"><path d="M17.4102 4.89442L17.4102 4.89442C17.5058 4.99 17.5672 5.12746 17.5672 5.27344V18.2422C17.5672 19.1838 16.801 19.95 15.8594 19.95H4.14062C3.19898 19.95 2.43281 19.1838 2.43281 18.2422V1.75781C2.43281 0.816169 3.19898 0.05 4.14062 0.05H12.3438C12.4861 0.05 12.6227 0.106929 12.7228 0.207029L12.7228 0.207035L17.4102 4.89442ZM12.965 1.96515L12.8797 1.8798V2.00051V4.10156C12.8797 4.45226 13.1649 4.7375 13.5156 4.7375H15.6167H15.7374L15.652 4.65214L12.965 1.96515ZM11.8078 1.17188V1.12188H11.7578H4.14062C3.78992 1.12188 3.50469 1.40711 3.50469 1.75781V18.2422C3.50469 18.5929 3.78992 18.8781 4.14062 18.8781H15.8594C16.2101 18.8781 16.4953 18.5929 16.4953 18.2422V5.85938V5.80937H16.4453H13.5156C12.574 5.80937 11.8078 5.04321 11.8078 4.10156V1.17188Z" stroke="white" stroke-width="0.1"></path><path d="M6.48438 8.33125H13.5156C13.8116 8.33125 14.0516 8.57121 14.0516 8.86719C14.0516 9.16317 13.8116 9.40313 13.5156 9.40313H6.48438C6.1884 9.40313 5.94844 9.16317 5.94844 8.86719C5.94844 8.57121 6.1884 8.33125 6.48438 8.33125Z" stroke="white" stroke-width="0.1"></path><path d="M6.48438 10.675H13.5156C13.8116 10.675 14.0516 10.915 14.0516 11.2109C14.0516 11.5069 13.8116 11.7469 13.5156 11.7469H6.48438C6.1884 11.7469 5.94844 11.5069 5.94844 11.2109C5.94844 10.915 6.1884 10.675 6.48438 10.675Z" stroke="white" stroke-width="0.1"></path><path d="M6.48438 13.0188H13.5156C13.8116 13.0188 14.0516 13.2587 14.0516 13.5547C14.0516 13.8507 13.8116 14.0906 13.5156 14.0906H6.48438C6.1884 14.0906 5.94844 13.8507 5.94844 13.5547C5.94844 13.2587 6.1884 13.0188 6.48438 13.0188Z" stroke="white" stroke-width="0.1"></path><path d="M6.48438 15.3625H11.1719C11.4679 15.3625 11.7078 15.6025 11.7078 15.8984C11.7078 16.1944 11.4679 16.4344 11.1719 16.4344H6.48438C6.1884 16.4344 5.94844 16.1944 5.94844 15.8984C5.94844 15.6025 6.1884 15.3625 6.48438 15.3625Z" stroke="white" stroke-width="0.1"></path></g><defs><clippath id="clip0_5_701"><rect width="20" height="20" fill="white"></rect></clippath></defs></svg><span class="link-text">Materials for preparation</span></a></div><div><a class="sidenav-item" href="https://study.binary-studio.com/cabinet/testing"><svg width="20" height="20" viewBox="0 0 20 20" fill="#00AEEF"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C15.5192 0 20 4.48083 20 10C20 15.5192 15.5192 20 10 20C4.48083 20 0 15.5192 0 10C0 4.48083 4.48083 0 10 0ZM10 0.833333C15.0592 0.833333 19.1667 4.94083 19.1667 10C19.1667 15.0592 15.0592 19.1667 10 19.1667C4.94083 19.1667 0.833333 15.0592 0.833333 10C0.833333 4.94083 4.94083 0.833333 10 0.833333ZM10 10H15V10.8333H9.16667V3.33333H10V10Z"></path></svg><span class="link-text">Testing</span><div class="mark-icon mark-icon-yellow"><span>74</span></div></a></div><div><a class="sidenav-item active" href="https://study.binary-studio.com/cabinet/lectures-selection"><svg width="20" height="20" viewBox="0 0 20 20" fill="#00AEEF"><path d="M19.1582 11.898L18.7376 11.641L19.1582 11.3824C20.2782 10.6978 20.2807 9.53187 19.1582 8.84581L18.7376 8.58882L19.1582 8.33015C20.2812 7.64382 20.2773 6.01515 19.1596 5.33211L10.9143 0.260781C10.3491 -0.0846484 9.64683 -0.0846484 9.0816 0.260781C9.08109 0.261094 9.08062 0.261406 9.08007 0.261719L0.841831 5.33125C-0.280864 6.01738 -0.277544 7.64609 0.840308 8.32921L1.2623 8.58886L0.841831 8.84581C-0.276841 9.52949 -0.281606 10.6957 0.840308 11.3814L1.2623 11.641L0.841831 11.898C-0.281177 12.5843 -0.279536 13.9835 0.840308 14.6678L9.0816 19.7392C9.64078 20.0809 10.343 20.0884 10.9157 19.7384L19.1582 14.6688C20.2807 13.9828 20.2805 12.584 19.1582 11.898ZM1.45429 6.32996L9.69406 1.25953L9.69382 1.25969C9.88203 1.14535 10.1155 1.14562 10.3019 1.25961L18.5473 6.33093C18.9202 6.55882 18.9225 7.10128 18.5459 7.33144C17.9407 7.70367 10.5696 12.2373 10.3035 12.401C10.115 12.5162 9.88097 12.5161 9.69414 12.4019C9.32609 12.1755 1.7821 7.5332 1.45285 7.33054C1.0798 7.10261 1.0775 6.56023 1.45429 6.32996ZM1.17242 10.1141C1.173 10.0944 1.22464 9.98484 1.45277 9.84542L2.38171 9.27769L9.08164 13.4006C9.64203 13.743 10.3443 13.7489 10.9157 13.3997L17.6179 9.27746L18.5473 9.84538C18.7754 9.9848 18.827 10.0944 18.8276 10.114C18.827 10.1337 18.7753 10.2433 18.5458 10.3836C17.9405 10.7559 10.5696 15.2894 10.3034 15.4532C10.115 15.5683 9.88093 15.5683 9.6941 15.4541C9.42773 15.2902 2.06406 10.7589 1.45281 10.3827C1.22464 10.2432 1.173 10.1337 1.17242 10.1141ZM18.5459 13.67L10.3034 18.7396C10.115 18.8548 9.88093 18.8548 9.69406 18.7406L1.45273 13.6692C1.0805 13.4417 1.08007 13.1253 1.45273 12.8976L2.38171 12.33L9.08164 16.4528C9.64281 16.7957 10.345 16.8007 10.9157 16.4519L17.6179 12.3297L18.5473 12.8976C18.7255 13.0065 18.8276 13.1471 18.8276 13.2834C18.8276 13.4197 18.7254 13.5603 18.5459 13.67Z"></path></svg><span class="link-text">Lectures | Selection</span><svg width="15" height="9" viewBox="0 0 15 9" fill="none" class="arrow arrow-chevron-up"><path d="M7.9115 8.37959L14.8303 1.44165C15.0568 1.21434 15.0564 0.84631 14.8291 0.619377C14.6018 0.392621 14.2335 0.393206 14.0068 0.620549L7.49985 7.14552L0.992926 0.620314C0.766169 0.393001 0.398171 0.392415 0.170829 0.619142C0.0568647 0.732902 -0.000118275 0.881934 -0.000118281 1.03097C-0.000118288 1.17962 0.0564832 1.32807 0.169657 1.44162L7.08823 8.37959C7.19716 8.48907 7.3454 8.55051 7.49985 8.55051C7.6543 8.55051 7.80237 8.4889 7.9115 8.37959Z" fill="#00AEEF"></path></svg></a><div class="main-sublinks"><a class="sidenav-item sublink" href="https://study.binary-studio.com/cabinet/lectures-selection/GIT/"><span class="lecture-name">GIT</span><div class="mark-icon mark-icon-yellow"><span>7.9</span></div></a><a class="sidenav-item sublink" href="https://study.binary-studio.com/cabinet/lectures-selection/JS-for-everyone/"><span class="lecture-name">JS for everyone</span><div class="mark-icon mark-icon-yellow"><span>6.5</span></div></a><a class="sidenav-item sublink sub-active" href="https://study.binary-studio.com/cabinet/lectures-selection/NodeJS/" aria-current="page"><span class="lecture-name">Node.js</span><div class="mark-icon mark-icon-blue"><span>8.8</span></div></a></div></div><div><a class="sidenav-item" href="https://study.binary-studio.com/cabinet/mini-project"><svg width="20" height="20" viewBox="0 0 20 20" fill="#00AEEF"><g clip-path="url(#clip0_5_701)"><path d="M17.4102 4.89442L17.4102 4.89442C17.5058 4.99 17.5672 5.12746 17.5672 5.27344V18.2422C17.5672 19.1838 16.801 19.95 15.8594 19.95H4.14062C3.19898 19.95 2.43281 19.1838 2.43281 18.2422V1.75781C2.43281 0.816169 3.19898 0.05 4.14062 0.05H12.3438C12.4861 0.05 12.6227 0.106929 12.7228 0.207029L12.7228 0.207035L17.4102 4.89442ZM12.965 1.96515L12.8797 1.8798V2.00051V4.10156C12.8797 4.45226 13.1649 4.7375 13.5156 4.7375H15.6167H15.7374L15.652 4.65214L12.965 1.96515ZM11.8078 1.17188V1.12188H11.7578H4.14062C3.78992 1.12188 3.50469 1.40711 3.50469 1.75781V18.2422C3.50469 18.5929 3.78992 18.8781 4.14062 18.8781H15.8594C16.2101 18.8781 16.4953 18.5929 16.4953 18.2422V5.85938V5.80937H16.4453H13.5156C12.574 5.80937 11.8078 5.04321 11.8078 4.10156V1.17188Z" stroke="white" stroke-width="0.1"></path><path d="M6.48438 8.33125H13.5156C13.8116 8.33125 14.0516 8.57121 14.0516 8.86719C14.0516 9.16317 13.8116 9.40313 13.5156 9.40313H6.48438C6.1884 9.40313 5.94844 9.16317 5.94844 8.86719C5.94844 8.57121 6.1884 8.33125 6.48438 8.33125Z" stroke="white" stroke-width="0.1"></path><path d="M6.48438 10.675H13.5156C13.8116 10.675 14.0516 10.915 14.0516 11.2109C14.0516 11.5069 13.8116 11.7469 13.5156 11.7469H6.48438C6.1884 11.7469 5.94844 11.5069 5.94844 11.2109C5.94844 10.915 6.1884 10.675 6.48438 10.675Z" stroke="white" stroke-width="0.1"></path><path d="M6.48438 13.0188H13.5156C13.8116 13.0188 14.0516 13.2587 14.0516 13.5547C14.0516 13.8507 13.8116 14.0906 13.5156 14.0906H6.48438C6.1884 14.0906 5.94844 13.8507 5.94844 13.5547C5.94844 13.2587 6.1884 13.0188 6.48438 13.0188Z" stroke="white" stroke-width="0.1"></path><path d="M6.48438 15.3625H11.1719C11.4679 15.3625 11.7078 15.6025 11.7078 15.8984C11.7078 16.1944 11.4679 16.4344 11.1719 16.4344H6.48438C6.1884 16.4344 5.94844 16.1944 5.94844 15.8984C5.94844 15.6025 6.1884 15.3625 6.48438 15.3625Z" stroke="white" stroke-width="0.1"></path></g><defs><clippath id="clip0_5_701"><rect width="20" height="20" fill="white"></rect></clippath></defs></svg><span class="link-text">Mini project</span><svg width="15" height="9" viewBox="0 0 15 9" fill="none" class="arrow"><path d="M7.9115 8.37959L14.8303 1.44165C15.0568 1.21434 15.0564 0.84631 14.8291 0.619377C14.6018 0.392621 14.2335 0.393206 14.0068 0.620549L7.49985 7.14552L0.992926 0.620314C0.766169 0.393001 0.398171 0.392415 0.170829 0.619142C0.0568647 0.732902 -0.000118275 0.881934 -0.000118281 1.03097C-0.000118288 1.17962 0.0564832 1.32807 0.169657 1.44162L7.08823 8.37959C7.19716 8.48907 7.3454 8.55051 7.49985 8.55051C7.6543 8.55051 7.80237 8.4889 7.9115 8.37959Z" fill="#00AEEF"></path></svg></a></div><div><a class="sidenav-item" href="https://study.binary-studio.com/cabinet/motivation-letter"><svg width="20" height="20" viewBox="0 0 20 20" fill="#00AEEF"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.917642 0.0335462C0.616558 0.120754 0.26428 0.430522 0.0946462 0.757269L0 0.939628V9.9968V19.054L0.0968755 19.2435C0.216328 19.4771 0.507198 19.7657 0.749873 19.8915L0.932275 19.986L7.37713 19.9973C10.9218 20.0035 13.8629 19.9986 13.913 19.9865C14.0016 19.9649 15.8109 18.1679 15.8834 18.0293C15.9034 17.9911 16.1684 17.7136 16.4723 17.4127C17.5337 16.3616 19.1332 14.6849 19.2898 14.4592C19.3766 14.334 19.4603 14.2225 19.4757 14.2113C19.6175 14.1087 19.8905 13.3998 19.9642 12.9429C20.1836 11.5821 19.3735 10.0876 18.1143 9.53052C16.9933 9.03467 15.6743 9.20163 14.5946 9.97601C14.4233 10.0989 14.2757 10.1994 14.2665 10.1994C14.2574 10.1994 14.2448 8.08859 14.2386 5.50874L14.2273 0.818055L14.1202 0.655958C13.9611 0.415406 13.726 0.205734 13.4977 0.100735L13.2951 0.00757016L7.17446 0.00084314C3.30427 -0.00341191 1.00378 0.00858326 0.917642 0.0335462ZM13.2158 1.01885L13.3153 1.1183V5.65888C13.3153 8.15618 13.3043 10.1994 13.2908 10.1994C13.2773 10.1994 13.1997 10.1476 13.1185 10.0843C12.3818 9.50998 11.6915 9.26108 10.8225 9.25642C10.5773 9.25512 10.2672 9.27717 10.1334 9.30545C9.82877 9.36984 9.29879 9.57089 9.18956 9.66348C9.1442 9.70194 8.99475 9.81444 8.85746 9.91348C7.91283 10.5949 7.39659 11.8969 7.61665 13.0427C7.69852 13.4691 7.94525 14.0855 8.08432 14.2113C8.09665 14.2225 8.17901 14.3228 8.26733 14.4342C8.45124 14.6663 8.94364 15.1899 9.90676 16.1775C10.2766 16.5569 10.7343 17.0317 10.9238 17.2328C11.1133 17.4338 11.5739 17.9124 11.9473 18.2963C12.3207 18.6802 12.6262 19.0125 12.6262 19.0347C12.6262 19.0613 10.6621 19.0715 6.84663 19.0645L1.06697 19.054L0.989509 18.9583C0.913711 18.8648 0.912008 18.6654 0.912008 9.99047V1.1183L1.01152 1.01885L1.11099 0.919366H7.11366H13.1163L13.2158 1.01885ZM3.068 4.32446C2.8847 4.43614 2.79476 4.65635 2.85296 4.8507C2.87708 4.9311 2.94417 5.04141 3.00209 5.09579L3.10735 5.19467L7.06624 5.20501C10.9805 5.21518 11.0267 5.21437 11.1593 5.1332C11.2345 5.08716 11.3214 4.98464 11.357 4.89998C11.4427 4.69594 11.3672 4.46653 11.1712 4.33487L11.0334 4.24235L7.1178 4.24252C3.26191 4.24264 3.20009 4.24389 3.068 4.32446ZM3.00217 7.89261C2.81993 8.0526 2.78098 8.23444 2.88385 8.445C3.03273 8.7497 2.94725 8.74042 5.60508 8.74046C8.21099 8.74054 8.17358 8.74399 8.32862 8.4897C8.42789 8.32699 8.43186 8.20972 8.34447 8.02557C8.21825 7.75961 8.30742 7.76796 5.59705 7.76796H3.1442L3.00217 7.89261ZM11.4845 10.3051C12.2566 10.5033 12.9574 11.066 13.2974 11.7607C13.4505 12.0736 13.5644 12.1648 13.8017 12.1648C13.9535 12.1648 14.0215 12.1426 14.1024 12.0666C14.16 12.0126 14.2071 11.9486 14.2071 11.9245C14.2071 11.8353 14.4263 11.4682 14.6345 11.2086C14.9978 10.7559 15.7825 10.3299 16.4198 10.2394C17.5005 10.086 18.5459 10.6774 18.909 11.6473C19.1413 12.2682 19.1118 12.8928 18.8222 13.4819C18.6762 13.7788 18.5923 13.8851 18.2144 14.2518C17.9733 14.4859 17.7294 14.7412 17.6724 14.8192C17.6154 14.8972 17.1908 15.3466 16.729 15.8179C15.8093 16.7564 14.4379 18.1732 14.0477 18.5879L13.7999 18.8513L13.1316 18.1624C12.1211 17.1208 10.8885 15.8424 10.2607 15.1847C9.95163 14.8611 9.57507 14.4778 9.42388 14.3329C8.43275 13.3832 8.26283 12.1787 8.97209 11.1307C9.257 10.7097 9.74369 10.384 10.2348 10.2854C10.3574 10.2609 10.4942 10.2326 10.5388 10.2226C10.6726 10.1926 11.2388 10.242 11.4845 10.3051ZM3.114 11.3122C2.77194 11.4609 2.73542 11.8978 3.04469 12.141C3.14894 12.223 3.19454 12.2256 4.5086 12.2256C6.01394 12.2256 6.03502 12.2222 6.16047 11.9579C6.24308 11.7838 6.23765 11.6643 6.1398 11.5039C5.99376 11.2644 5.91873 11.2529 4.51067 11.2546C3.52416 11.2559 3.21412 11.2686 3.114 11.3122ZM13.488 13.7008C13.3437 13.8329 13.3369 13.8511 13.322 14.1465L13.3064 14.4545H13.0501C12.7224 14.4545 12.6164 14.4966 12.5098 14.669C12.4006 14.8456 12.4001 15.035 12.5083 15.21C12.6237 15.3968 12.6964 15.427 13.0289 15.427H13.3153V15.6742C13.3153 15.9663 13.3936 16.154 13.5553 16.2494C13.793 16.3898 14.1248 16.2939 14.2059 16.0613C14.2288 15.9956 14.2476 15.826 14.2476 15.6844V15.427H14.5352C14.8571 15.427 15.0063 15.3639 15.1136 15.1823C15.2249 14.9939 15.1996 14.799 15.0415 14.6266C14.9073 14.4801 14.8937 14.4752 14.5804 14.461L14.2575 14.4463L14.2386 14.1194C14.2209 13.8143 14.2112 13.785 14.0911 13.6778C13.903 13.5097 13.6875 13.5179 13.488 13.7008ZM3.10204 14.8305C2.98287 14.8908 2.81709 15.1242 2.81709 15.2317C2.81709 15.3813 2.93586 15.5886 3.068 15.6698C3.19851 15.75 3.25283 15.752 5.07393 15.7416C6.9022 15.7312 6.94833 15.729 7.06008 15.646C7.31982 15.4533 7.30778 15.0537 7.03673 14.8713L6.899 14.7787L5.05058 14.7793C3.65342 14.7797 3.17772 14.7922 3.10204 14.8305Z"></path></svg><span class="link-text">Motivation letter</span></a></div><div><a class="sidenav-item" href="https://study.binary-studio.com/cabinet/lectures-academy"><svg width="20" height="20" viewBox="0 0 20 20" fill="#00AEEF"><path d="M8.66914 6.63809L8.66914 6.63808C8.53464 6.70613 8.45046 6.84453 8.45046 6.9941V13.0298C8.45046 13.1815 8.53471 13.3192 8.66914 13.3872C8.72604 13.4159 8.7884 13.4303 8.85161 13.4303C8.93303 13.4303 9.01606 13.4044 9.08656 13.3526L9.08701 13.3522L13.2394 10.3364C13.2395 10.3363 13.2396 10.3363 13.2397 10.3362C13.3458 10.258 13.4064 10.1385 13.4064 10.013V10.0126C13.4069 9.88503 13.3448 9.76631 13.2399 9.68987L8.66914 6.63809ZM8.66914 6.63809L8.66971 6.63779C8.80272 6.56943 8.9647 6.58239 9.08703 6.67104C9.08705 6.67105 9.08707 6.67107 9.08709 6.67108L13.2399 9.68982L8.66914 6.63809Z" stroke="white" stroke-width="0.2"></path><path d="M0.1 10.0023C0.1 4.53363 4.53162 0.102014 10.0003 0.102014C15.4677 0.102014 19.9007 4.53364 19.9 10.0023C19.9 15.4684 15.4677 19.8994 10.0003 19.8994C4.53159 19.8994 0.1 15.469 0.1 10.0023ZM1.57049 10.0023C1.57049 14.6584 5.34495 18.4309 10.0003 18.4309C14.6551 18.4309 18.4295 14.6584 18.4288 10.0023C18.4288 5.34765 14.6551 1.57118 10.0003 1.57118C5.34489 1.57118 1.57049 5.3483 1.57049 10.0023Z" stroke="white" stroke-width="0.2"></path></svg><span class="link-text">Lectures | Academy</span><svg width="15" height="9" viewBox="0 0 15 9" fill="none" class="arrow"><path d="M7.9115 8.37959L14.8303 1.44165C15.0568 1.21434 15.0564 0.84631 14.8291 0.619377C14.6018 0.392621 14.2335 0.393206 14.0068 0.620549L7.49985 7.14552L0.992926 0.620314C0.766169 0.393001 0.398171 0.392415 0.170829 0.619142C0.0568647 0.732902 -0.000118275 0.881934 -0.000118281 1.03097C-0.000118288 1.17962 0.0564832 1.32807 0.169657 1.44162L7.08823 8.37959C7.19716 8.48907 7.3454 8.55051 7.49985 8.55051C7.6543 8.55051 7.80237 8.4889 7.9115 8.37959Z" fill="#00AEEF"></path></svg></a></div><div><a class="sidenav-item" href="https://study.binary-studio.com/cabinet/interview"><svg width="20" height="20" viewBox="0 0 20 20" fill="#00AEEF"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.50746 0.0800773C1.25333 0.373516 0.317033 1.25507 0.0636451 2.38097C-0.000664733 2.66673 -0.00666579 3.45382 0.0045302 10.141L0.0169354 17.583L0.122178 17.863C0.324601 18.4018 0.565181 18.756 0.978134 19.1234C1.40949 19.5071 1.77793 19.716 2.30092 19.8735C2.65538 19.9801 2.67433 19.9814 4.08726 19.995C5.63347 20.0099 5.68811 20.0039 5.88274 19.7972C6.10039 19.5661 6.07106 19.2414 5.81256 19.0199L5.67642 18.9033L4.30213 18.8801C3.00416 18.8581 2.91298 18.8517 2.65919 18.7638C2.14234 18.5848 1.78169 18.3134 1.54546 17.9256C1.28011 17.49 1.2944 17.9401 1.29382 9.99513C1.29328 2.78852 1.29453 2.68381 1.38325 2.42711C1.57855 1.86227 2.0246 1.44716 2.67482 1.22518L2.92789 1.13876L8.61546 1.12732C12.4933 1.11952 14.4028 1.12948 14.6165 1.15869C15.374 1.26215 15.9956 1.71159 16.267 2.35217C16.3609 2.57374 16.3636 2.64056 16.3855 5.25966C16.4072 7.8618 16.4105 7.9435 16.4974 8.04705C16.7708 8.37258 17.3305 8.35557 17.581 8.01412C17.6564 7.91145 17.6628 7.73421 17.6754 5.4015C17.6845 3.72453 17.6727 2.79708 17.6396 2.58995C17.4409 1.3493 16.4819 0.381718 15.1488 0.0771165C14.8136 0.000536027 14.6319 -0.00166457 8.82102 0.000455995C3.05369 0.00257656 2.82641 0.00545735 2.50746 0.0800773ZM3.78824 4.9567C3.60839 5.10662 3.59965 5.12467 3.59965 5.34681C3.59965 5.51753 3.62357 5.60824 3.68922 5.68642C3.8985 5.9356 3.55169 5.91984 8.82388 5.91968C13.5099 5.91956 13.6349 5.91756 13.7744 5.84158C13.9821 5.72843 14.074 5.58071 14.074 5.35969C14.074 5.13867 13.9821 4.99095 13.7744 4.8778C13.6348 4.80182 13.5098 4.79982 8.80404 4.7997L3.97687 4.79954L3.78824 4.9567ZM3.78922 8.15676C3.6083 8.30756 3.59965 8.32532 3.59965 8.54766C3.59965 8.71839 3.62357 8.80909 3.68922 8.88727C3.89473 9.13198 3.73338 9.1207 7.02357 9.1207C10.293 9.1207 10.1758 9.1285 10.3793 8.8974C10.5782 8.67146 10.5409 8.35109 10.2909 8.13703L10.1546 8.0204L7.06674 8.0096L3.97879 7.9988L3.78922 8.15676ZM13.2609 9.48139C12.6918 9.61463 12.2505 9.84833 11.7941 10.2582C11.3497 10.6574 11.1402 10.9644 10.9595 11.4813C10.8711 11.7343 10.8551 11.863 10.8578 12.3015C10.8605 12.7528 10.8766 12.8641 10.9798 13.1418C11.1156 13.5075 11.3493 13.8786 11.6264 14.1686C11.7315 14.2786 11.8175 14.3836 11.8175 14.402C11.8175 14.4203 11.6492 14.5081 11.4435 14.597C10.8805 14.8405 10.4104 15.138 9.92261 15.5596C9.22774 16.1602 8.79661 16.7339 8.46225 17.5029C8.02256 18.5142 8.05391 19.0658 8.57954 19.5679C8.69688 19.6799 8.89397 19.8192 9.01762 19.8776L9.24243 19.9836L13.9969 19.9943C18.7112 20.0049 18.7535 20.0043 18.9994 19.9221C19.5075 19.7523 19.9325 19.2575 19.9945 18.7633C20.0449 18.3621 19.7415 17.4775 19.325 16.8112C18.7378 15.872 17.6644 14.9761 16.6233 14.5564C16.4555 14.4888 16.3103 14.4268 16.3006 14.4186C16.2908 14.4104 16.3663 14.3229 16.4682 14.224C16.8255 13.8778 17.1084 13.401 17.241 12.9217C17.3197 12.6375 17.3193 11.9228 17.2404 11.6443C16.9381 10.5776 16.0264 9.74154 14.8797 9.47951C14.4222 9.37501 13.7119 9.37581 13.2609 9.48139ZM14.6668 10.6229C14.9515 10.6942 15.3806 10.9463 15.5635 11.1496C15.9742 11.6062 16.1157 12.1614 15.9586 12.7003C15.7023 13.5792 14.7979 14.1212 13.7944 13.9971C12.3517 13.8188 11.6388 12.3039 12.504 11.2551C13.0127 10.6385 13.805 10.407 14.6668 10.6229ZM3.78963 11.3573C3.60825 11.5085 3.59965 11.5261 3.59965 11.7485C3.59965 12.0031 3.68129 12.1428 3.89765 12.2582C4.07047 12.3503 8.03434 12.3542 8.23305 12.2623C8.63391 12.0771 8.69876 11.6234 8.36521 11.3379L8.22897 11.2213L6.10429 11.2101L3.97956 11.199L3.78963 11.3573ZM15.2303 15.3362C16.7966 15.699 18.0977 16.7849 18.5694 18.1231C18.6982 18.4886 18.7121 18.5597 18.6605 18.5882C18.6313 18.6043 18.6346 18.624 18.6694 18.6432C18.7103 18.6658 18.7047 18.699 18.6466 18.7782L18.5696 18.8833H14.0068H9.44396V18.719C9.44396 18.3282 9.74419 17.6304 10.1437 17.0929C10.857 16.1332 12.0082 15.4618 13.2874 15.2595C13.8119 15.1766 14.691 15.2113 15.2303 15.3362Z"></path></svg><span class="link-text">Interview</span></a></div><div><a class="sidenav-item" href="https://study.binary-studio.com/cabinet/result"><svg width="21" height="21" viewBox="0 0 21 21" fill="#00AEEF"><path d="M10.775 0.862795C16.298 0.862795 20.775 5.3398 20.775 10.8628C20.775 11.5898 20.698 12.2978 20.55 12.9808L19.3755 11.8628C19.4489 10.1075 18.7831 7.30158 17.775 5.8628C16.7669 4.42402 15.2048 3.39321 13.53 2.8628C11.8552 2.33238 9.67254 2.26664 8.02 2.8628C6.36746 3.45895 4.72544 4.38532 3.775 5.8628C2.82456 7.34027 2.13235 9.67247 2.275 11.4235C2.41765 13.1744 3.09794 15.0556 4.275 16.3598C5.45206 17.6639 7.54776 19.042 9.275 19.3628C11.0022 19.6836 13.4331 19.2945 15 18.5C15.3817 19.1049 15.5 19 15.948 19.4218C14.3882 20.3669 12.5988 20.8653 10.775 20.8628C5.252 20.8628 0.775 16.3858 0.775 10.8628C0.775 5.3398 5.252 0.862795 10.775 0.862795ZM17.775 13.0348L19.189 14.4488C19.4643 14.724 19.6532 15.0734 19.7328 15.4544C19.8124 15.8354 19.779 16.2313 19.6369 16.5937C19.4948 16.956 19.25 17.269 18.9326 17.4942C18.6152 17.7195 18.239 17.8473 17.8501 17.8619C17.4611 17.8765 17.0764 17.7773 16.743 17.5764C16.4096 17.3756 16.1421 17.0818 15.9732 16.7312C15.8043 16.3806 15.7414 15.9883 15.7921 15.6024C15.8429 15.2165 16.0051 14.8538 16.259 14.5588L16.361 14.4488L17.775 13.0348ZM10.775 13.8628C12.241 13.8628 13.36 14.3568 14.275 15.3628L13.775 15.8628C12.985 15.5478 11.793 14.8628 10.775 14.8628C9.757 14.8628 8.565 15.5498 7.775 15.8628L7.275 15.3628C7.74321 14.8467 8.11437 14.5705 8.75166 14.2888C9.38894 14.007 10.0782 13.8619 10.775 13.8628ZM7.275 8.86279C7.67282 8.86279 8.05436 9.02083 8.33566 9.30213C8.61696 9.58344 8.775 9.96497 8.775 10.3628C8.775 10.7606 8.61696 11.1422 8.33566 11.4235C8.05436 11.7048 7.67282 11.8628 7.275 11.8628C6.87717 11.8628 6.49564 11.7048 6.21434 11.4235C5.93303 11.1422 5.775 10.7606 5.775 10.3628C5.775 9.96497 5.93303 9.58344 6.21434 9.30213C6.49564 9.02083 6.87717 8.86279 7.275 8.86279ZM14.275 8.86279C14.6728 8.86279 15.0544 9.02083 15.3357 9.30213C15.617 9.58344 15.775 9.96497 15.775 10.3628C15.775 10.7606 15.617 11.1422 15.3357 11.4235C15.0544 11.7048 14.6728 11.8628 14.275 11.8628C13.8772 11.8628 13.4956 11.7048 13.2143 11.4235C12.933 11.1422 12.775 10.7606 12.775 10.3628C12.775 9.96497 12.933 9.58344 13.2143 9.30213C13.4956 9.02083 13.8772 8.86279 14.275 8.86279Z"></path></svg><span class="link-text">Result</span></a></div></div></div></div><div class="user-layout-content scroll-anchor"><div class="lectures-view"><div class="lecture"><div class="common-header"><div class="common-header-topic"><div class="common-header-subtitle">Lecture</div><div class="common-header-title">NodeJS</div></div><div class="common-header-deadline"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><g clip-path="url(#clip0)"><path d="M17.4565 7.07609L17.4225 7.1101L17.4551 7.14537C18.9107 8.71897 19.8014 10.8237 19.8014 13.133C19.8014 17.9947 15.853 21.95 10.9999 21.95C6.1468 21.95 2.19832 17.9947 2.19832 13.133C2.19832 10.8237 3.08907 8.71897 4.54465 7.14537L4.57727 7.1101L4.54333 7.07609L2.86772 5.3973C2.63578 5.16492 2.63613 4.78846 2.86852 4.55652L2.86852 4.55651C3.10086 4.32457 3.47731 4.32489 3.7093 4.55731L5.41434 6.26558L5.44615 6.29744L5.48117 6.26914C6.83589 5.17385 8.52004 4.47218 10.359 4.33901L10.4053 4.33565V4.28914V3.42757V3.37757H10.3553H9.57478C8.65738 3.37757 7.91097 2.63116 7.91097 1.71381C7.91097 0.796453 8.65738 0.05 9.57478 0.05H12.425C13.3424 0.05 14.0888 0.796452 14.0888 1.71381C14.0888 2.63116 13.3424 3.37757 12.425 3.37757H11.6444H11.5944V3.42757V4.28914V4.33565L11.6408 4.33901C13.4797 4.47218 15.1639 5.17385 16.5186 6.26914L16.5536 6.29744L16.5855 6.26558L18.2905 4.55731L18.2551 4.52199L18.2905 4.5573C18.5224 4.32485 18.8989 4.32453 19.1313 4.55651L19.1666 4.52113L19.1313 4.55652C19.3637 4.78846 19.364 5.16492 19.1321 5.3973L17.4565 7.07609ZM9.57478 1.23906C9.31294 1.23906 9.10003 1.45202 9.10003 1.71381C9.10003 1.97561 9.31294 2.18851 9.57478 2.18851H12.425C12.6868 2.18851 12.8997 1.9756 12.8997 1.71381C12.8997 1.45202 12.6868 1.23906 12.425 1.23906H9.57478ZM3.38738 13.133C3.38738 17.339 6.80218 20.7609 10.9999 20.7609C15.1976 20.7609 18.6124 17.339 18.6124 13.133C18.6124 8.92691 15.1976 5.50496 10.9999 5.50496C6.80218 5.50496 3.38738 8.92691 3.38738 13.133Z" fill="#00AEEF" stroke="white" stroke-width="0.1"></path><path d="M4.55531 13.1329C4.55531 9.57321 7.4465 6.6772 11 6.6772C14.5534 6.6772 17.4446 9.57325 17.4446 13.133C17.4446 16.6927 14.5534 19.5886 11 19.5886C7.4465 19.5886 4.55531 16.6926 4.55531 13.1329ZM5.74437 13.133C5.74437 16.0369 8.10188 18.3996 11 18.3996C13.898 18.3996 16.2555 16.0369 16.2555 13.1329C16.2555 10.229 13.898 7.86626 11 7.86626C8.10188 7.86626 5.74437 10.229 5.74437 13.133Z" fill="#00AEEF" stroke="white" stroke-width="0.1"></path><path d="M11.5945 12.4885V12.5385H11.6445H13.1444C13.4727 12.5385 13.7389 12.8047 13.7389 13.133C13.7389 13.4614 13.4727 13.7276 13.1444 13.7276H11C10.6717 13.7276 10.4055 13.4614 10.4055 13.133V10.0627C10.4055 9.73441 10.6717 9.46821 11 9.46821C11.3283 9.46821 11.5945 9.73441 11.5945 10.0627V12.4885Z" fill="#00AEEF" stroke="white" stroke-width="0.1"></path></g><defs><clippath id="clip0"><rect width="22" height="22" fill="white"></rect></clippath></defs></svg><div class="deadline"><span class="deadline-preposition">Deadline ended</span>&nbsp;more then 1 month</div></div></div><div class="common-navigation-bar"><a class="link" href="https://study.binary-studio.com/cabinet/lectures-selection/NodeJS/lecture"><span>Lecture</span></a><a class="link link-active-view" href="https://study.binary-studio.com/cabinet/lectures-selection/NodeJS/task" aria-current="page"><span>Task</span><div class="mark-icon mark-icon-blue"><span>8.8</span></div></a><a class="link" href="https://study.binary-studio.com/cabinet/lectures-selection/NodeJS/abstract"><span>Abstract</span></a><a class="link" href="https://study.binary-studio.com/cabinet/lectures-selection/NodeJS/presentation"><span>Presentation</span></a><a class="link" href="https://study.binary-studio.com/cabinet/lectures-selection/NodeJS/chat"><span>Chat</span></a></div><div class="modal display-none"><div class="modal-main"><div class="modal-content"><div class="lecture-feedback info-element"><div class="lecture-rating-label">Rate lecture quality</div><div class="lecture-quality-item"><div class="lecture-quality-item-label"><div>Video quality</div></div><div class="star-rating"><label class="star-rating__star is-selected">★</label><label class="star-rating__star is-selected">★</label><label class="star-rating__star is-selected">★</label><label class="star-rating__star is-selected">★</label><label class="star-rating__star is-selected">★</label></div></div><div class="lecture-quality-item"><div class="lecture-quality-item-label"><div>Presentation</div></div><div class="star-rating"><label class="star-rating__star is-selected">★</label><label class="star-rating__star is-selected">★</label><label class="star-rating__star is-selected">★</label><label class="star-rating__star is-selected">★</label><label class="star-rating__star is-selected">★</label></div></div><div class="lecture-quality-item"><div class="lecture-quality-item-label"><div>Informativeness</div></div><div class="star-rating"><label class="star-rating__star is-selected">★</label><label class="star-rating__star is-selected">★</label><label class="star-rating__star is-selected">★</label><label class="star-rating__star is-selected">★</label><label class="star-rating__star is-selected">★</label></div></div><textarea spellcheck="true" class="textarea" placeholder="Enter text..."></textarea><button type="submit" class="submit-button button"><div class="submit-button-content-wrapper">Estimate</div></button></div></div></div></div><div class="lecture-task"><div class="lecture-task-part review"><div class="mark-block mark-block-blue"><span>8.8</span></div><div class="review-block"><div class="lecture-header-data"><h3 class="lecture-info-header">Answer checked!</h3><div class="lecture-task"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="expand" class="svg-inline--fa fa-expand fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"></path></svg><div class="modal display-none"><div class="modal-main"><div class="modal-content"><div class="modal-review-block"><div class="modal-lecture-header-data"><h3 class="modal-lecture-info-header">Answer checked!</h3></div><div class="modal-review-block-text"><div class="markdown-view"><div><p>Greetings! Thank you for finishing the homework!</p>
+<p>Auto tests mark: 7.5</p>
+<p>Code mark: 1.3</p>
+<ul>
+<li>Middlewares implementation: 0.4</li>
+<li>Code <em>cleanliness</em>: 0.4</li>
+<li>Layers usage: 0.5</li>
+</ul>
+<p>Comments:</p>
+<ul>
+<li>Just for notice - commits that were done after the deadline won't be reviewed.</li>
+<li>When the&nbsp;<em>validation error</em> occurs, it will be good for the client to know what exactly went wrong. Especially, when you are passing an object with more than one field.</li>
+<li>Check like this <code>isNaN(reqBody.phoneNumber.substring(1))</code> will always return <code>false</code>, no matter if you pass a string or a number. <code>isNaN</code> only returns <code>true</code> if you pass <code>NaN</code> as a value.</li>
+<li><code>if (!data.health) data.health = '100';</code> - but why as a string? Because of this particular <em>miss, </em>some of the autotests were failing. Otherwise - you would get a highest mark 🤷‍♂️</li>
+<li>minor remarks:
+<ul>
+<li>line length sometimes reaches 150 chars. Statements like so:<br>
+<pre>else if (!(reqBody.phoneNumber.startsWith("+380") &amp;&amp; reqBody.phoneNumber.length === 13 &amp;&amp; !isNaN(reqBody.phoneNumber.substring(1)))) throw error;</pre>
+better to, at least, break on each own line/per statement. Ideally - define a constant beforehand, to achieve something like:<br>
+<pre>else if (!isCorrectCountryCode &amp;&amp; isCorrectLength &amp;&amp; isAllNums)</pre>
+<p>&nbsp;</p>
+</li>
+<li>
+<p>typos</p>
+</li>
+</ul>
+</li>
+</ul></div></div></div><div class="autograde-result-view"><h1 class="autograde-result-title">Result from autograding system</h1><div class="trace">Привітулі👋
+Я binary автотест 🤖.
+Я буду перевіряти чи вірно працюють функціональні частини додатку.
+
+
+Давай пройдемось за списком 📔
+
+1) CRUD сутності користувача (4.5 / 4.5) 🎉
+2) Перевірка валідаційних правил користувача (створення) (8 / 8) 🎉
+3) Перевірка валідаційних правил користувача (оновлення) (5 / 5) 🎉
+4) Базовий CRUD сутності бійця (1 / 4) 
+	⚠️ Базові методи CRUD 
+		⚠️ Створення сутності 
+			expected '100' to equal 100
+				Expected: 100
+				Actual: 100
+		⚠️ Зчитування всіх записів 
+			expected '100' to equal 100
+				Expected: 100
+				Actual: 100
+		⚠️ Пошук користувача по Id 
+			expected '100' to equal 100
+				Expected: 100
+				Actual: 100
+		⚠️ Оновлення даних 
+			expected '100' to equal 100
+				Expected: 100
+				Actual: 100
+5) Перевірка валідаційних правил бійця (створення) (14 / 14) 🎉
+6) Перевірка валідаційних правил бійця (оновлення) (12.5 / 12.5) 🎉</div></div></div></div><div class="modal-close-control"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11 gray" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></div></div></div></div></div><div class="review-block-text"><div class="markdown-view"><div><p>Greetings! Thank you for finishing the homework!</p>
+<p>Auto tests mark: 7.5</p>
+<p>Code mark: 1.3</p>
+<ul>
+<li>Middlewares implementation: 0.4</li>
+<li>Code <em>cleanliness</em>: 0.4</li>
+<li>Layers usage: 0.5</li>
+</ul>
+<p>Comments:</p>
+<ul>
+<li>Just for notice - commits that were done after the deadline won't be reviewed.</li>
+<li>When the&nbsp;<em>validation error</em> occurs, it will be good for the client to know what exactly went wrong. Especially, when you are passing an object with more than one field.</li>
+<li>Check like this <code>isNaN(reqBody.phoneNumber.substring(1))</code> will always return <code>false</code>, no matter if you pass a string or a number. <code>isNaN</code> only returns <code>true</code> if you pass <code>NaN</code> as a value.</li>
+<li><code>if (!data.health) data.health = '100';</code> - but why as a string? Because of this particular <em>miss, </em>some of the autotests were failing. Otherwise - you would get a highest mark 🤷‍♂️</li>
+<li>minor remarks:
+<ul>
+<li>line length sometimes reaches 150 chars. Statements like so:<br>
+<pre>else if (!(reqBody.phoneNumber.startsWith("+380") &amp;&amp; reqBody.phoneNumber.length === 13 &amp;&amp; !isNaN(reqBody.phoneNumber.substring(1)))) throw error;</pre>
+better to, at least, break on each own line/per statement. Ideally - define a constant beforehand, to achieve something like:<br>
+<pre>else if (!isCorrectCountryCode &amp;&amp; isCorrectLength &amp;&amp; isAllNums)</pre>
+<p>&nbsp;</p>
+</li>
+<li>
+<p>typos</p>
+</li>
+</ul>
+</li>
+</ul></div></div></div><div class="autograde-result-view"><h1 class="autograde-result-title">Result from autograding system</h1><div class="trace">Привітулі👋
+Я binary автотест 🤖.
+Я буду перевіряти чи вірно працюють функціональні частини додатку.
+
+
+Давай пройдемось за списком 📔
+
+1) CRUD сутності користувача (4.5 / 4.5) 🎉
+2) Перевірка валідаційних правил користувача (створення) (8 / 8) 🎉
+3) Перевірка валідаційних правил користувача (оновлення) (5 / 5) 🎉
+4) Базовий CRUD сутності бійця (1 / 4) 
+	⚠️ Базові методи CRUD 
+		⚠️ Створення сутності 
+			expected '100' to equal 100
+				Expected: 100
+				Actual: 100
+		⚠️ Зчитування всіх записів 
+			expected '100' to equal 100
+				Expected: 100
+				Actual: 100
+		⚠️ Пошук користувача по Id 
+			expected '100' to equal 100
+				Expected: 100
+				Actual: 100
+		⚠️ Оновлення даних 
+			expected '100' to equal 100
+				Expected: 100
+				Actual: 100
+5) Перевірка валідаційних правил бійця (створення) (14 / 14) 🎉
+6) Перевірка валідаційних правил бійця (оновлення) (12.5 / 12.5) 🎉</div></div></div></div><div class="lecture-task-part"><h3 class="lecture-info-header">Answer</h3><div class="lecture-answer-body"><div class="input-wrapper input-wrapper-bounded blurred"><div class="input"><input name="repoLink" type="" class="inputStyles readonly" readonly="" value="https://bitbucket.org/elchinbaba/nodejs-hometask-boilerpalte.git"><span class="label placeholder active">Link to repo</span></div></div><textarea spellcheck="true" readonly="" class="textarea blurred" placeholder="Homework Deadline has expired"></textarea></div></div><div class="lecture-task-part"><div class="markdown-homework"><div class="markdown-view"><p>Ryu asked a student to implement the ability to add fighters and change their characteristics. Ryu also wants to be able to see who exactly is using the app.</p><p>Ryu already has sign-in and sign-up pages, as well as pages for creating and viewing fighter stats, however there is no backend part.</p><h2>Start the project</h2><ul><li>** For the first start ** you need to run</li></ul><pre><code>. build-start.sh</code></pre><p>(the executable file <code>build-start.sh</code> is in the root folder of the project)</p><ul><li>After that you can start using the command</li></ul><pre><code>npm start</code></pre><h3>Project specification</h3><ul><li>In the client folder there is a small react application, which includes views for sign-up, sign-in, adding and selecting fighters. The main purpose of this project is to show how a client works with a server. Requests from a client can be viewed in the Network tab in the Chrome Dev tools. When developing the backend, use Postman to test the API.</li><li>The config folder contains a database configuration. The database.json file is used as the database.</li><li>The middlewares folder contains functions that run and handle the request before controllers in the routes folder.</li><li>The repositories folder contains classes for interacting with the database for each entity. You can read about the repository pattern <a href="https://shawnmc.cool/2015-01-08_the-repository-pattern">here</a></li><li>The routes folder contains controllers for each entity. This is the entry point for a request to the backend part of the application.</li><li>The services folder contains classes for handling requests according to business logic for each entity. It is very important that controllers remain clean and all business logic is located in services. This allows you to write more readable code and reuse it efficiently.</li><li>The models folder contains models of main application entities. Models describe in what form entities are stored in the database.</li><li>index.js is the entry point to the application and handles the configuration of the server itself.</li></ul><h2>Task</h2><p>You need to implement a REST API for user and fighter entities.</p><pre><code>    USER:
+        GET /api/users
+        GET /api/users/:id
+        POST /api/users
+        PUT /api/users/:id
+        DELETE /api/users/:id
+
+    FIGHTER
+        GET /api/fighters
+        GET /api/fighters/:id
+        POST /api/fighters
+        PUT /api/fighters/:id
+        DELETE /api/fighters/:id</code></pre><hr><p>For create/update entities requests, you need to implement validation via middlewares. Validation rules are defined by entities in the models folder. It is necessary to validate:</p><ul><li>Presence of fields:<ul><li>When creating a user - all fields are required, except for <code>id</code></li><li>When creating a fighter - all fields are required, except for <code>id</code> and <code>health</code></li><li>When updating a user or a fighter - at least one field from the model must be present</li></ul></li><li>Id in the request body should NOT be present</li><li>The presence of any extra fields (not from the <code>models</code> folder) is not allowed</li><li>Fields format:<ul><li>email - allow only @gmail domain</li><li>phoneNumber: +380xxxxxxxxx</li><li>power - number, 1 &lt;= power &lt;= 100</li><li>defense - number, 1 &lt;= defense &lt;= 10</li><li>health - number, 80 &lt;= health &lt;= 120, optional (default - 100)</li><li>password - string, min 3 characters</li></ul></li></ul><p>All additional validations are welcome.
+** You cannot use third-party libraries for validations **</p><hr><p>You will also need to implement <code>response.middleware</code> to return the server response according to the following rules:</p><ul><li>If everything went well - return the 200 status code and JSON with response data</li><li>Errors<ul><li>Request errors (validation, handling issues) - return the 400 status code and JSON with an error</li><li>If requested data is not found - return the 404 status code and JSON with an error
+Format of JSON errors</li></ul></li></ul><pre><code>{
+    error: true,
+    message: ''
+}</code></pre><hr><p>The database <strong>should not</strong> contain:</p><ul><li>Users with the same "email"</li><li>Users with the same "phoneNumber"</li><li>Fighters with the same "name"
+(all fields are case insensitive)</li></ul><hr><p>Try to provide brief but clear error messages, for example:</p><ul><li>User not found</li><li>User entity to create isn't valid</li></ul><hr><p>During the implementation of the homework, it is very important to consider project structure and layers:</p><ul><li>repositories - work with the database</li><li>services - handle business logic of the application</li><li>routes - receive requests and send responses</li></ul><h3>Additional task</h3><ul><li>Add the functionality for the fight from the previous task</li><li>Implement saving the fight and viewing their history</li></ul><p>[Starter] (https://github.com/DmitrijDN/nodejs-hometask-boilerpalte)</p></div></div></div></div></div></div></div> </div></div><script async="" src="./Lectures _ Selection_files/analytics.js.download"></script><script>!function(e){function t(t){for(var r,c,d=t[0],i=t[1],s=t[2],f=0,l=[];f<d.length;f++)c=d[f],Object.prototype.hasOwnProperty.call(o,c)&&o[c]&&l.push(o[c][0]),o[c]=0;for(r in i)Object.prototype.hasOwnProperty.call(i,r)&&(e[r]=i[r]);for(u&&u(t);l.length;)l.shift()();return n.push.apply(n,s||[]),a()}function a(){for(var e,t=0;t<n.length;t++){for(var a=n[t],r=!0,c=1;c<a.length;c++){var i=a[c];0!==o[i]&&(r=!1)}r&&(n.splice(t--,1),e=d(d.s=a[0]))}return e}var r={},c={61:0},o={61:0},n=[];function d(t){if(r[t])return r[t].exports;var a=r[t]={i:t,l:!1,exports:{}};return e[t].call(a.exports,a,a.exports,d),a.l=!0,a.exports}d.e=function(e){var t=[];c[e]?t.push(c[e]):0!==c[e]&&{0:1,5:1,6:1,11:1,12:1,13:1,14:1,15:1,17:1,18:1,19:1,21:1,23:1,24:1,25:1,26:1,27:1,28:1,29:1,30:1,31:1,32:1,33:1,34:1,35:1,36:1,37:1,38:1,39:1,40:1,41:1,42:1,43:1,44:1,45:1,46:1,47:1,48:1,49:1,50:1,51:1,52:1,53:1,54:1,55:1,57:1,58:1,59:1,63:1,64:1,65:1,67:1}[e]&&t.push(c[e]=new Promise((function(t,a){for(var r="static/css/"+({5:"AcademyStage",6:"QuestionList",11:"AcademiesDashboard",12:"Academy",13:"AcademyClosed",14:"AcademyStages",15:"AcademyStatistic",16:"AddAcademyStageContainer",17:"AddNewStage",18:"AdminLayout",19:"Auth",20:"CertificatePageContainer",21:"Chat",22:"ConfirmParticipation",23:"ConfirmRegistration",24:"EditProfile",25:"ForgotPassword",26:"Form",27:"FormPage",28:"HomePage",29:"HomeworkResponse",30:"HomeworkReviews",31:"LectureForm",32:"LectureInfo",33:"LectureList",34:"LectureView",35:"Login",36:"MailTemplates",37:"MarkRating",38:"MarkdownPreview",39:"MaterialGroupList",40:"MaterialList",41:"NotFoundPage",42:"Project",43:"ProjectInfo",44:"ProjectMarks",45:"ProjectStatistics",46:"PublicPage",47:"Questions",48:"Register",49:"RegisterTeacher",50:"SelectNextAcademy",51:"SeparateHomeworkReviews",52:"Statistic",53:"SystemSettings",54:"Task",55:"TestList",56:"TestSummaryPageContainer",57:"UserBlocked",58:"UserLayout",59:"UserRouteComponent"}[e]||e)+"."+{0:"f91e34dd",1:"31d6cfe0",2:"31d6cfe0",3:"31d6cfe0",4:"31d6cfe0",5:"138ad97f",6:"b6b8a137",7:"31d6cfe0",8:"31d6cfe0",9:"31d6cfe0",10:"31d6cfe0",11:"4003b33a",12:"7b818a3a",13:"6ea1b06d",14:"14d156c8",15:"45247e00",16:"31d6cfe0",17:"b73ed2a7",18:"6e8dfec0",19:"22c1e55a",20:"31d6cfe0",21:"ef87fea7",22:"31d6cfe0",23:"23bde255",24:"5019e698",25:"1da3a823",26:"c2e168cb",27:"6443669d",28:"872a304b",29:"1ab6136b",30:"bfda57ed",31:"32ba5658",32:"eb1e9892",33:"291ce065",34:"050b5c0a",35:"33dd8946",36:"12cb11d5",37:"03339edd",38:"72b1ca8a",39:"79a5e048",40:"0df7a505",41:"967507cf",42:"789e9bf8",43:"bafec08c",44:"1c250a7b",45:"7455aafd",46:"75b7213d",47:"82f9aa3e",48:"ffcc0d62",49:"80ecbf96",50:"b88102e1",51:"cd844943",52:"81778e3f",53:"a06fdcc6",54:"97360551",55:"150f233b",56:"31d6cfe0",57:"131c97f5",58:"c5942216",59:"d3498c7b",63:"f7acdfe6",64:"c5e522c8",65:"109ecbfc",66:"31d6cfe0",67:"594f2fe4",68:"31d6cfe0"}[e]+".chunk.css",o=d.p+r,n=document.getElementsByTagName("link"),i=0;i<n.length;i++){var s=(u=n[i]).getAttribute("data-href")||u.getAttribute("href");if("stylesheet"===u.rel&&(s===r||s===o))return t()}var f=document.getElementsByTagName("style");for(i=0;i<f.length;i++){var u;if((s=(u=f[i]).getAttribute("data-href"))===r||s===o)return t()}var l=document.createElement("link");l.rel="stylesheet",l.type="text/css",l.onload=t,l.onerror=function(t){var r=t&&t.target&&t.target.src||o,n=new Error("Loading CSS chunk "+e+" failed.\n("+r+")");n.code="CSS_CHUNK_LOAD_FAILED",n.request=r,delete c[e],l.parentNode.removeChild(l),a(n)},l.href=o,document.getElementsByTagName("head")[0].appendChild(l)})).then((function(){c[e]=0})));var a=o[e];if(0!==a)if(a)t.push(a[2]);else{var r=new Promise((function(t,r){a=o[e]=[t,r]}));t.push(a[2]=r);var n,i=document.createElement("script");i.charset="utf-8",i.timeout=120,d.nc&&i.setAttribute("nonce",d.nc),i.src=function(e){return d.p+"static/js/"+({5:"AcademyStage",6:"QuestionList",11:"AcademiesDashboard",12:"Academy",13:"AcademyClosed",14:"AcademyStages",15:"AcademyStatistic",16:"AddAcademyStageContainer",17:"AddNewStage",18:"AdminLayout",19:"Auth",20:"CertificatePageContainer",21:"Chat",22:"ConfirmParticipation",23:"ConfirmRegistration",24:"EditProfile",25:"ForgotPassword",26:"Form",27:"FormPage",28:"HomePage",29:"HomeworkResponse",30:"HomeworkReviews",31:"LectureForm",32:"LectureInfo",33:"LectureList",34:"LectureView",35:"Login",36:"MailTemplates",37:"MarkRating",38:"MarkdownPreview",39:"MaterialGroupList",40:"MaterialList",41:"NotFoundPage",42:"Project",43:"ProjectInfo",44:"ProjectMarks",45:"ProjectStatistics",46:"PublicPage",47:"Questions",48:"Register",49:"RegisterTeacher",50:"SelectNextAcademy",51:"SeparateHomeworkReviews",52:"Statistic",53:"SystemSettings",54:"Task",55:"TestList",56:"TestSummaryPageContainer",57:"UserBlocked",58:"UserLayout",59:"UserRouteComponent"}[e]||e)+"."+{0:"1bf7b619",1:"01e237dd",2:"e20cc298",3:"ef8f3b1e",4:"e4e77d26",5:"71196751",6:"dc07e118",7:"555c1e9b",8:"b6dfc5dc",9:"c1658090",10:"c7d411da",11:"dc335b1b",12:"6acc2692",13:"077b5e35",14:"1a412899",15:"9d393128",16:"c315f836",17:"8aa00fd0",18:"41c12ce6",19:"2de2c8d7",20:"a9242ebb",21:"9dbc239e",22:"c47583ba",23:"73c09aae",24:"462376bc",25:"52c78c78",26:"78ecc9eb",27:"1452fc13",28:"e89e13a5",29:"d8eaa7f3",30:"9f2e9450",31:"cf869002",32:"b432ec64",33:"033d1953",34:"8f2c0bb0",35:"19d9c5e2",36:"e25e3036",37:"f786fee0",38:"d1dc007c",39:"987cba16",40:"ac98a50b",41:"037d7250",42:"37cae191",43:"49755b2a",44:"84011d28",45:"b6ccdf5a",46:"c53055a2",47:"ed502d62",48:"bee357ba",49:"4add88cf",50:"504a6779",51:"0e684530",52:"d15943d0",53:"63e57f20",54:"1cbc4074",55:"96c32ddb",56:"980a766b",57:"69b00829",58:"84bdbd6e",59:"e96f2d64",63:"34cdf171",64:"a0adc93c",65:"000c46af",66:"7154ede6",67:"59194168",68:"d5498900"}[e]+".chunk.js"}(e);var s=new Error;n=function(t){i.onerror=i.onload=null,clearTimeout(f);var a=o[e];if(0!==a){if(a){var r=t&&("load"===t.type?"missing":t.type),c=t&&t.target&&t.target.src;s.message="Loading chunk "+e+" failed.\n("+r+": "+c+")",s.name="ChunkLoadError",s.type=r,s.request=c,a[1](s)}o[e]=void 0}};var f=setTimeout((function(){n({type:"timeout",target:i})}),12e4);i.onerror=i.onload=n,document.head.appendChild(i)}return Promise.all(t)},d.m=e,d.c=r,d.d=function(e,t,a){d.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:a})},d.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},d.t=function(e,t){if(1&t&&(e=d(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var a=Object.create(null);if(d.r(a),Object.defineProperty(a,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var r in e)d.d(a,r,function(t){return e[t]}.bind(null,r));return a},d.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return d.d(t,"a",t),t},d.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},d.p="/",d.oe=function(e){throw console.error(e),e};var i=this["webpackJsonpbinary-studio-academy-client"]=this["webpackJsonpbinary-studio-academy-client"]||[],s=i.push.bind(i);i.push=t,i=i.slice();for(var f=0;f<i.length;f++)t(i[f]);var u=s;a()}([])</script><script src="./Lectures _ Selection_files/62.c6df2411.chunk.js.download"></script><script src="./Lectures _ Selection_files/main.99378124.chunk.js.download"></script></body></html>

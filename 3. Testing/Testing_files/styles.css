@@ -1,0 +1,105 @@
+.test-done {
+    height: 80%;
+    font-family: "Gilroy-Semibold";
+    display: flex;
+    cursor: default;
+}
+
+.content {
+    max-width: 700px;
+    text-align: left;
+}
+
+.header {
+    font-size: 45px;
+    font-family: "Gilroy-Bold";
+    line-height: 56px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.result {
+    margin: 0;
+    font-family: "Gilroy-Semibold";
+    font-size: 64px;
+    color: #00AEEF;
+    text-transform: uppercase;
+}
+
+.details {
+    font-family: "Gilroy-Light",serif;
+    max-width: 700px;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #6B6A6A;
+}
+
+.details h3 {
+    font-family: "Gilroy-Semibold";
+    color: #000000;
+    text-transform: uppercase;
+    margin-top: 1.5em;
+}
+
+.details .highlight {
+    color: #56b7f9;
+}
+
+.sidebar {
+    width: 550px;
+    height: 500px;
+    margin-left: auto;
+}
+
+.sidebar .cloud-image {
+    position: absolute;
+}
+
+.sidebar .cloud-image.failure-block {
+    margin-left: -20px;
+}
+
+.sidebar .circle-image {
+    position: absolute;
+}
+
+.sidebar .ura-image {
+    position: absolute;
+    margin: 95px 0 0 70px;
+}
+
+.sidebar .sorry-image {
+    position: absolute;
+    margin: 95px 0 0 70px;
+}
+
+.subscribe-links {
+    font-size: 18px;
+    font-family: "Gilroy-Light",serif;
+    margin-top: 10px;
+}
+
+.link {
+    color: #56b7f9;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.link img {
+    margin-right: 5px;
+}
+
+@media (max-width: 900px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+.subscribe {
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 130px;
+    text-align: center;
+}

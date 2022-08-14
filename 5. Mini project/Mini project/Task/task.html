@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="lecture-task-part">
+        <div class="markdown-homework">
+            <div class="markdown-view">
+                <h1>BSA 2022 Thread</h1>
+                <h2>Description</h2>
+                <p><a href="javascript:void(0)"><strong>Thread</strong></a> - this is <a title="SPA" href="https://medium.com/NeotericEU/single-page-application-vs-multiple-page-application-2591588efe58">SPA</a> with a ready-made architecture and structure, a connected basic technology stack and start-up functionality, designed for individual practice of students.</p>
+                <p>The main theme of the project is a social network similar to Twitter.</p>
+                <p>The main idea of the project is to onboard students with our vision of how a real project should look like from the inside, and give them the opportunity to individually explore how the architecture and structure of the project works, see its possible configurations, try to deeply understand someone else's code.</p>
+                <h2>Technologies</h2>
+                <p>The main frameworks and libraries used in the project are listed here. A complete list of technologies used for each part of the project is in the <code>package.json</code> files in the <code>client</code> and <code>server</code> folders.</p>
+                <h3>Common</h3>
+                <ol>
+                    <li>ESLatest</li>
+                    <li><a href="https://git-scm.com/doc">Git</a></li>
+                    <li><a href="https://www.restapitutorial.com/lessons/restquicktips.html">REST API</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/JSON_Web_Token">JWT</a></li>
+                    <li><a href="https://socket.io/docs/">Socket.IO</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Npm_(software)">npm</a></li>
+                    <li><a href="https://eslint.org/docs/user-guide/getting-started">ESLint</a></li>
+                    <li><a href="https://www.npmjs.com/package/joi">joi</a></li>
+                    <li><a href="https://day.js.org/">dayjs</a></li>
+                </ol>
+                <h3>Frontend</h3>
+                <ol>
+                    <li><a href="https://reactjs.org/docs/getting-started.html">React</a></li>
+                    <li><a href="https://redux.js.org/introduction/getting-started">React Redux</a></li>
+                    <li><a href="https://react-hook-form.com/get-started">React Hook Form</a></li>
+                    <li><a href="https://www.npmjs.com/package/history">history</a></li>
+                </ol>
+                <h3>Backend</h3>
+                <ol>
+                    <li><a href="https://nodejs.org/en/">Node.js</a></li>
+                    <li><a href="https://www.fastify.io/docs/v3.24.x/">Fastify</a></li>
+                    <li><a href="https://knexjs.org/">Knex</a></li>
+                    <li><a href="https://vincit.github.io/objection.js/">Objection</a></li>
+                    <li><a href="https://www.npmjs.com/package/axios">axios</a></li>
+                    <li><a href="https://www.npmjs.com/package/bcrypt">bcrypt</a></li>
+                    <li><a href="https://www.npmjs.com/package/nodemon">nodemon</a></li>
+                    <li><a href="https://www.npmjs.com/package/dotenv">dotenv</a></li>
+                    <li><a href="https://www.npmjs.com/package/jsonwebtoken">jsonwebtoken</a></li>
+                </ol>
+                <h3>Database</h3>
+                <ol>
+                    <li><a title="PostgreSQL" href="https://www.postgresql.org/download/">PostgreSQL</a></li>
+                </ol>
+                <h2>Installation</h2>
+                <ol>
+                    <li>
+                        <p>Get the latest stable version <a title="Node.js" href="https://nodejs.org/en/">Node.js</a> (LTS). <strong>Note:</strong> npm will be installed automatically. Check the correctness of the installation: to do this, run in the command line (terminal):</p>
+                        <pre><code>node -v  // for checking Node.js version
+        npm -v // for checking npm version</code></pre>
+                    </li>
+                    <li>
+                        <p>Get the latest stable version <a title="PostgreSQL" href="https://www.postgresql.org/download/">PostgreSQL</a> for your OS. Check the correctness of the work - try to create a database, a table - for this you can use <a title="pgAdmin" href="https://www.pgadmin.org/">pgAdmin</a> or any other convenient way you find.</p>
+                    </li>
+                    <li>
+                        <p>Create in PostgreSQL <strong>empty</strong> database for the project. For example, <em>thread</em>.</p>
+                    </li>
+                    <li>
+                        <p>Install Git.</p>
+                    </li>
+                    <li>
+                        <p>Clone project`s <a href="https://github.com/BinaryStudioAcademy/thread-js">repo</a>:</p>
+                        <pre><code>git clone git@github.com:BinaryStudioAcademy/thread-js.git</code></pre>
+                    </li>
+                    <li>
+                        <p><strong>Create a repo at <a href="https://bitbucket.org/">Bitbucket</a> and carry out further development there.</strong></p>
+                    </li>
+                </ol>
+                <h3>Root of project</h3>
+                <ol>
+                    <li>
+                        <p>In the root of the project, you can install all the dependencies with one command:</p>
+                        <pre><code>  npm run install:all</code></pre>
+                        <p>This will install the dependencies for the root directory, frontend and backend. Can be installed for each folder separately (see below).</p>
+                    </li>
+                    <li>
+                        <p>After installing the packages, in the root of the project, you need to run the command to <a href="https://www.npmjs.com/package/simple-git-hooks">git-hooks</a>:</p>
+                        <pre><code>  npx simple-git-hooks</code></pre>
+                        <p><strong>Now, for each of your commits, the linter will be launched and check your code.</strong></p>
+                    </li>
+                </ol>
+                <h3>Shared</h3>
+                <p>Shared package contains code that is used for both frontend and backend.</p>
+                <ol>
+                    <li>
+                        <p>In the command line (terminal) go to the <code>shared</code> folder:</p>
+                        <pre><code>cd /* path to shared folder */</code></pre>
+                    </li>
+                    <li>
+                        <p>Install all required packages from package.json with the command:</p>
+                        <pre><code>npm install</code></pre>
+                    </li>
+                </ol>
+                <h3>Backend</h3>
+                <ol>
+                    <li>
+                        <p>In the command line (terminal) go to the folder server:</p>
+                        <pre><code>cd /* path to server folder */</code></pre>
+                    </li>
+                    <li>
+                        <p>Install all required packages from <code>package.json</code> with the command:</p>
+                        <pre><code>npm install</code></pre>
+                    </li>
+                    <li>
+                        <p>In the server folder create a file <strong>.env</strong> and copy the contents of the file <strong>.env.example</strong> into it.</p>
+                        <p><strong>Note</strong>: file <strong>.env</strong> contains real project keys and should not be saved to the repository.</p>
+                        <p>Replace in file <strong>.env</strong> key values to real.
+                        In order to specify the keys for Gyazo Storage, you need to register on the site <a href="https://gyazo.com/captures">Gyazo</a> and <a href="https://gyazo.com/oauth/applications">register the app</a>. Then, in <strong>.env</strong>  use <code>access token</code> from the recently created application to Gyazo.
+                        </p>
+                    </li>
+                    <li>
+                        <p>Run <a href="https://knexjs.org/#Migrations">migrations</a> and seeds to populate the database with demo data. To do this, in the command line (terminal) in the server folder, run:</p>
+                        <pre><code>npm run migrate:run
+        npm run seed:run</code></pre>
+                        <p>Check the database for demo data.</p>
+                    </li>
+                    <li>
+                        <p>To start the server in the command line (terminal) in the server folder, run:</p>
+                        <pre><code>npm start</code></pre>
+                    </li>
+                </ol>
+                <h3>Frontend</h3>
+                <ol>
+                    <li>
+                        <p>In the command line (terminal) go to the <code>client</code> folder:</p>
+                        <pre><code>cd /* path to client folder */</code></pre>
+                    </li>
+                    <li>
+                        <p>Install all required packages from package.json with the command:</p>
+                        <pre><code>npm install</code></pre>
+                    </li>
+                    <li>
+                        <p>In the <code>client</code> folder create a file <strong>.env</strong> and copy the contents of the file into it <strong>.env.example</strong>.</p>
+                        <p><strong>Note</strong>: file <strong>.env</strong> contains real project keys and should not be saved to the repository.</p>
+                        <p>Replace in file <strong>.env</strong> key values to real.</p>
+                    </li>
+                    <li>
+                        <p>To run the client from the command line (terminal) in the client folder, run:</p>
+                        <pre><code>npm start</code></pre>
+                        <p>The app should automatically open in your default browser.</p>
+                    </li>
+                </ol>
+                <h2>PS</h2>
+                <p>The entire list of tasks can also be found on the board <a title="**Trello**" href="https://trello.com/b/9Y9ZIr6j"><strong>Trello</strong></a> in the column <strong>To Do</strong>. You need to copy the board for yourself and work on it. This will help you track the entire process of your work, and we will determine what is already ready. The task will be considered completed if it is fully completed and the feature works. Let's look at its implementation and evaluate whether the logic was distributed correctly in the project. This will show how much you understand the architecture. We will also comment on the code..</p>
+                <p>The main result of the work can be determined by how deeply you were able to understand the project and understand it, and how far you have advanced in personal learning.</p>
+                <p>Links:</p>
+                <ol>
+                    <li><a href="https://github.com/BinaryStudioAcademy/thread-js">Repo</a>.</li>
+                    <li><a href="https://trello.com/b/9Y9ZIr6j">Trello</a>.</li>
+                </ol>
+                <h2>FAQ:</h2>
+                <ol>
+                    <li>What frameworks, libraries and their features can be used?</li>
+                </ol>
+                <p>Complete freedom of action, feel free, use whatever you want.</p>
+                <ol start="2">
+                    <li>Is it possible to change the database (add columns, tables)?</li>
+                </ol>
+                <p>It is possible, and in some tasks it is even necessary. To do this, you need to create new migrations. Existing migrations cannot be changed!!! Please do not forget it.</p>
+                <ol start="3">
+                    <li>Error: Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style</li>
+                </ol>
+                <p>You need to change the <code>autocrlf</code> setting to input or false in the Git settings.</p>
+                <pre><code>git config --global core.autocrlf false</code></pre>
+                <p>You may need to pull the project again.</p>
+                <ol start="4">
+                    <li>When registering an application on the Gyazo website, you must provide <code>Authorization callback URL</code></li>
+                </ol>
+                <p>Use https://www.google.com/.</p>
+            </div>
+        </div>
+     </div>
+</body>
+</html>

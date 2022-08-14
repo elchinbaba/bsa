@@ -1,0 +1,457 @@
+/* body {
+	display: flex;
+	padding: 0 0 5px 5%;
+	font-family: 'Gilroy';
+	overflow-x: hidden;
+	overflow-y: auto;
+} */
+
+/* body * {
+	text-align: justify;
+} */
+
+body {
+	display: flex;
+}
+
+a {
+	font-size: 16px;
+	color: #00aeef;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration-line: underline;
+}
+
+.content {
+	flex: 2;
+	max-width: 60%;
+	z-index: 1;
+	margin-top: 40px;
+}
+
+header {
+	display: flex;
+	margin-bottom: 68px;
+}
+
+header > * {
+	white-space: nowrap;
+}
+
+.header-item:not(:first-child) {
+	margin-left: 30px;
+}
+
+.header-item {
+	font-family: 'Gilroy-Medium';
+	display: flex;
+	flex-direction: column;
+	font-size: 14px;
+}
+
+.header-item .secondary {
+	font-size: 12px;
+	color: #989898;
+	font-family: 'Gilroy';
+}
+
+.title {
+	max-width: 740px;
+}
+
+.title h2 {
+	font-family: 'Gilroy-Medium';
+	font-weight: normal;
+	margin: 0;
+}
+
+.title h1 {
+	font-family: 'Gilroy-Semibold';
+	font-size: 42px;
+	margin: 15px 0;
+}
+
+.stage {
+	margin-top: 55px;
+	display: flex;
+	align-items: baseline;
+	max-width: 550px;
+	margin-bottom: 65px;
+}
+
+.stage:last-child {
+	margin-bottom: 0px;
+}
+
+.stage .number {
+	font-family: 'Montserrat', sans-serif;
+	color: #00aeef;
+	font-size: 24px;
+	margin-right: 15px;
+}
+
+.stage h3 {
+	margin: 0;
+	font-size: 24px;
+	font-family: 'Gilroy-Semibold';
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+.stage ul {
+	list-style: none;
+	padding: 0;
+	margin: 28px 0 0 0;
+}
+
+.stage li {
+	display: flex;
+	align-items: flex-start;
+}
+
+.stage li:not(:last-child) {
+	margin-bottom: 40px;
+}
+
+.stage li:not(:first-child) p {
+	margin-bottom: 0;
+}
+
+.stage li .marker {
+	height: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.stage li .marker p {
+	width: 7px;
+	height: 7px;
+	background-color: #00aeef;
+	margin: 0 15px 0 0;
+	display: block;
+	border-radius: 50%;
+}
+
+.stage li p {
+	margin-bottom: 0;
+}
+
+.stage h4 {
+	text-transform: uppercase;
+	font-family: 'Gilroy-Semibold';
+	font-size: 18px;
+	margin: 0;
+}
+
+.stage p {
+	font-size: 18px;
+	color: #6b6a6a;
+	line-height: 1.2;
+}
+
+.sidebar {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* position: fixed; */
+	padding-left: 30px;
+	right: 0;
+	width: 30vw;
+}
+
+.sidebar .circle {
+	width: 40vw;
+	height: 40vw;
+	background-color: #f9fafc;
+	border-radius: 50%;
+	margin-right: 15%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+}
+
+.sidebar img {
+	margin: 40px 15% 0 0;
+	width: 100%;
+	max-height: 35vh;
+}
+
+.sidebar p {
+	font-size: 14px;
+	max-width: 305px;
+	margin-right: 20px;
+	line-height: 1.25;
+}
+
+.sidebar h4 {
+	font-size: 18px;
+	font-family: 'Gilroy-Semibold';
+	text-align: left;
+	margin-bottom: 0;
+	max-width: 305px;
+	margin-right: 20px;
+}
+
+.sidebar a {
+	font-size: 14px;
+}
+
+.stage li .calendar {
+	margin-top: 18px;
+	display: inline-block;
+}
+
+.stage li .calendar:hover {
+	cursor: pointer;
+}
+
+.addeventatc .addeventatc_icon {
+	display: none;
+}
+
+.telegram-message {
+	position: absolute;
+	top: 20vh;
+	right: 26vw;
+	max-width: 128px;
+	width: 30%;
+}
+
+.telegram-message img {
+	margin: 0;
+}
+
+.sidebar-text {
+	max-width: 305px;
+}
+
+#events-list {
+	max-width: 305px;
+	margin: 10% 0 0 20%;
+}
+
+#events-title {
+	margin: 5% 0;
+	text-transform: uppercase;
+	font-family: 'Gilroy-Semibold';
+}
+
+.date-place {
+	display: flex;
+	align-items: center;
+	color: #989898;
+	font-family: 'Gilroy';
+}
+
+.event-topic {
+	font-family: 'Gilroy-Semibold';
+}
+
+.dot {
+	width: 4px;
+	height: 4px;
+	background-color: #00aeef;
+	display: block;
+	border-radius: 50%;
+	margin: 0 3%;
+}
+
+.topic {
+	font-family: 'Gilroy-Semibold';
+}
+
+.arrow-symbol {
+	/* display: inline-block;
+	min-width: 20px;
+	text-align: right; */
+	font-family: 'Gilroy-Semibold';
+}
+
+.attendee-link:hover * {
+	text-decoration: underline;
+}
+
+.text-transparent {
+	color: transparent;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently */
+}
+
+.event-item {
+	margin-top: 0.7rem;
+	padding: 5px;
+}
+
+.event-item > * {
+	margin-top: 5%;
+}
+
+.hide {
+	display: none;
+}
+
+a {
+	cursor: pointer;
+}
+
+#show-more-events {
+	margin-top: 20px;
+}
+
+.link {
+	color: #00aeef;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.link:hover {
+	text-decoration: underline;
+}
+
+@media (min-width: 1630px) and (max-width: 1950px) {
+	.sidebar img {
+		margin-right: 25%;
+	}
+	.sidebar-text {
+		margin-left: 5%;
+	}
+	/* body {
+		padding-left: 10%;
+	} */
+}
+
+@media (min-width: 1950px) {
+	/* body {
+		padding-left: 10%;
+	} */
+	.sidebar {
+		transform: scale(1.1);
+		top: 150px;
+	}
+	.sidebar .group-img {
+		position: relative;
+	}
+
+	.sidebar-text {
+		max-width: initial;
+		margin-left: initial;
+	}
+}
+
+@media screen and (max-width: 1500px) {
+	.circle img {
+		transform: scale(0.7);
+	}
+
+	.sidebar-text{
+		position: relative;
+		margin-left: 50px;
+		bottom: 60px;
+	}
+	.telegram-message {
+		top: 20vh;
+		right: 25vw;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.sidebar img {
+		display: none;
+	}
+
+	.sidebar-text{
+		position: relative;
+		margin-left: 50px;
+		bottom: 0;
+	}
+}
+
+@media (max-width: 900px) {
+	/* body {
+		flex-direction: column;
+		align-items: flex-start;
+	} */
+
+	#events-list {
+		margin: 0;
+	}
+
+	header {
+		justify-content: space-between;
+	}
+
+	header > * {
+		white-space: initial;
+	}
+
+	.content {
+		max-width: none;
+	}
+
+	.stage:last-child {
+		margin-bottom: 40px;
+	}
+
+	.sidebar {
+		align-items: flex-start;
+		position: static;
+		padding: 0;
+		width: 100%;
+	}
+
+	.sidebar .telegram-message {
+		display: none;
+	}
+
+	.sidebar .circle {
+		display: none;
+	}
+
+	.sidebar-text {
+		max-width: none;
+		width: 90%;
+		margin-left: 0;
+	}
+
+	.sidebar p {
+		max-width: none;
+		width: 100%;
+		margin: 20px 20px 20px 0;
+	}
+
+	.sidebar h4 {
+		margin-top: 0;
+	}
+
+	#show-more-events {
+		text-align: center;
+	}
+
+	#show-more-events * {
+		font-size: 18px;
+		text-align: center;
+	}
+}
+
+.event-details {
+	text-decoration: underline;
+	color: #989898;
+}
+
+.event-item:hover {
+	background-color: rgba(245, 245, 245, 1);
+}
+
+.margin-top {
+	margin-top: 1rem;
+}

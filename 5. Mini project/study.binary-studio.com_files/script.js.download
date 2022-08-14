@@ -1,0 +1,53 @@
+import text from './text.js';
+
+const urlParams = new URLSearchParams(window.location.search);
+const lang = urlParams.get('lang') || 'ua';
+const group = urlParams.get('group') || urlParams.get('specialization') || 'NA';
+
+const renderTextByElementId = (id, textField) => {
+    const element = document.getElementById(id);
+    element.innerHTML = textField[lang];
+};
+
+const createRule = (rule, lang, index) => {
+    const container = document.createElement('div');
+    container.className = 'rule';
+
+    const ruleTitleContainer = document.createElement('div');
+    ruleTitleContainer.className = 'rule-title';
+    ruleTitleContainer.innerHTML = rule.title[lang];
+
+    const ruleIndex = document.createElement('span');
+    ruleIndex.className = 'rule-index';
+    ruleIndex.innerHTML = `0${index + 1}`;
+
+    const ruleContentContainer = document.createElement('div');
+    ruleContentContainer.className = 'rule-content';
+    ruleContentContainer.innerHTML = rule.content[lang];
+
+    container.appendChild(ruleIndex);
+    container.appendChild(ruleTitleContainer);
+    container.appendChild(ruleContentContainer);
+
+    return container;
+};
+
+const render = () => {
+    renderTextByElementId('header', text.header);
+    renderTextByElementId('attention', text.attention);
+    renderTextByElementId('attention-content', text.attentionContent);
+
+    const rulesNode = document.getElementById('rules');
+    const rules = text.rules.filter(rule => 
+        !((rule.onlyGroups && !rule.onlyGroups.includes(group))
+        || (rule.exceptGroups && rule.exceptGroups.includes(group)))
+    );
+
+    rules.forEach((rule, index) => {
+        rulesNode.appendChild(createRule(rule, lang, index));
+    });
+
+    document.getElementById('content').style.display = null;
+};
+
+render();

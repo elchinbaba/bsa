@@ -1,0 +1,17 @@
+import text from './text.js';
+
+const urlParams = new URLSearchParams(window.location.search);
+const lang = urlParams.get('lang') || 'ru';
+
+const renderTextByElementId = (id, textField) => {
+    const element = document.getElementById(id);
+    element.innerHTML = textField[lang];
+};
+
+const render = () => {
+    renderTextByElementId('title', text.title);
+    renderTextByElementId('description-intro', text.descriptionIntro);
+    renderTextByElementId('subscribe-text', text.subscribeMessage);
+};
+
+render();

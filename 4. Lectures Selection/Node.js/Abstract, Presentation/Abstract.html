@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <style type="text/css">
+  svg:not(:root).svg-inline--fa {
+  overflow: visible;
+  }
+
+  .svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+  }
+  .svg-inline--fa.fa-lg {
+  vertical-align: -0.225em;
+  }
+  .svg-inline--fa.fa-w-1 {
+  width: 0.0625em;
+  }
+  .svg-inline--fa.fa-w-2 {
+  width: 0.125em;
+  }
+  .svg-inline--fa.fa-w-3 {
+  width: 0.1875em;
+  }
+  .svg-inline--fa.fa-w-4 {
+  width: 0.25em;
+  }
+  .svg-inline--fa.fa-w-5 {
+  width: 0.3125em;
+  }
+  .svg-inline--fa.fa-w-6 {
+  width: 0.375em;
+  }
+  .svg-inline--fa.fa-w-7 {
+  width: 0.4375em;
+  }
+  .svg-inline--fa.fa-w-8 {
+  width: 0.5em;
+  }
+  .svg-inline--fa.fa-w-9 {
+  width: 0.5625em;
+  }
+  .svg-inline--fa.fa-w-10 {
+  width: 0.625em;
+  }
+  .svg-inline--fa.fa-w-11 {
+  width: 0.6875em;
+  }
+  .svg-inline--fa.fa-w-12 {
+  width: 0.75em;
+  }
+  .svg-inline--fa.fa-w-13 {
+  width: 0.8125em;
+  }
+  .svg-inline--fa.fa-w-14 {
+  width: 0.875em;
+  }
+  .svg-inline--fa.fa-w-15 {
+  width: 0.9375em;
+  }
+  .svg-inline--fa.fa-w-16 {
+  width: 1em;
+  }
+  .svg-inline--fa.fa-w-17 {
+  width: 1.0625em;
+  }
+  .svg-inline--fa.fa-w-18 {
+  width: 1.125em;
+  }
+  .svg-inline--fa.fa-w-19 {
+  width: 1.1875em;
+  }
+  .svg-inline--fa.fa-w-20 {
+  width: 1.25em;
+  }
+  .svg-inline--fa.fa-pull-left {
+  margin-right: 0.3em;
+  width: auto;
+  }
+  .svg-inline--fa.fa-pull-right {
+  margin-left: 0.3em;
+  width: auto;
+  }
+  .svg-inline--fa.fa-border {
+  height: 1.5em;
+  }
+  .svg-inline--fa.fa-li {
+  width: 2em;
+  }
+  .svg-inline--fa.fa-fw {
+  width: 1.25em;
+  }
+
+  .fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  }
+
+  .fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+  }
+  .fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  }
+
+  .fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  }
+
+  .fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  }
+
+  .fa-layers-counter {
+  background-color: #ff253a;
+  border-radius: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  height: 1.5em;
+  line-height: 1;
+  max-width: 5em;
+  min-width: 1.5em;
+  overflow: hidden;
+  padding: 0.25em;
+  right: 0;
+  text-overflow: ellipsis;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+  }
+
+  .fa-layers-bottom-right {
+  bottom: 0;
+  right: 0;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  }
+
+  .fa-layers-bottom-left {
+  bottom: 0;
+  left: 0;
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  }
+
+  .fa-layers-top-right {
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+  }
+
+  .fa-layers-top-left {
+  left: 0;
+  right: auto;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  }
+
+  .fa-lg {
+  font-size: 1.3333333333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+  }
+
+  .fa-xs {
+  font-size: 0.75em;
+  }
+
+  .fa-sm {
+  font-size: 0.875em;
+  }
+
+  .fa-1x {
+  font-size: 1em;
+  }
+
+  .fa-2x {
+  font-size: 2em;
+  }
+
+  .fa-3x {
+  font-size: 3em;
+  }
+
+  .fa-4x {
+  font-size: 4em;
+  }
+
+  .fa-5x {
+  font-size: 5em;
+  }
+
+  .fa-6x {
+  font-size: 6em;
+  }
+
+  .fa-7x {
+  font-size: 7em;
+  }
+
+  .fa-8x {
+  font-size: 8em;
+  }
+
+  .fa-9x {
+  font-size: 9em;
+  }
+
+  .fa-10x {
+  font-size: 10em;
+  }
+
+  .fa-fw {
+  text-align: center;
+  width: 1.25em;
+  }
+
+  .fa-ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0;
+  }
+  .fa-ul > li {
+  position: relative;
+  }
+
+  .fa-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit;
+  }
+
+  .fa-border {
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
+  }
+
+  .fa-pull-left {
+  float: left;
+  }
+
+  .fa-pull-right {
+  float: right;
+  }
+
+  .fa.fa-pull-left,
+  .fas.fa-pull-left,
+  .far.fa-pull-left,
+  .fal.fa-pull-left,
+  .fab.fa-pull-left {
+  margin-right: 0.3em;
+  }
+  .fa.fa-pull-right,
+  .fas.fa-pull-right,
+  .far.fa-pull-right,
+  .fal.fa-pull-right,
+  .fab.fa-pull-right {
+  margin-left: 0.3em;
+  }
+
+  .fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear;
+  }
+
+  .fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8);
+  }
+
+  @-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  }
+
+  @keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  }
+  .fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  }
+
+  .fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  }
+
+  .fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  }
+
+  .fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+  }
+
+  .fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+  }
+
+  .fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+  }
+
+  :root .fa-rotate-90,
+  :root .fa-rotate-180,
+  :root .fa-rotate-270,
+  :root .fa-flip-horizontal,
+  :root .fa-flip-vertical,
+  :root .fa-flip-both {
+  -webkit-filter: none;
+          filter: none;
+  }
+
+  .fa-stack {
+  display: inline-block;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+  }
+
+  .fa-stack-1x,
+  .fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  }
+
+  .svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+  }
+  .svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+  }
+
+  .fa-inverse {
+  color: #fff;
+  }
+
+  .sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  }
+
+  .sr-only-focusable:active, .sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  }
+
+  .svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+  }
+
+  .svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+  }
+
+  .svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+  }
+
+  .svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+  }
+
+  .svg-inline--fa mask .fa-primary,
+  .svg-inline--fa mask .fa-secondary {
+  fill: black;
+  }
+
+  .fad.fa-inverse {
+  color: #fff;
+  }
+  </style>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/font.css">
+  <title>Lectures | Selection</title>
+  <link href="/static/css/61.f01b737b.chunk.css" rel="stylesheet">
+  <link href="/static/css/main.9eb48f76.chunk.css" rel="stylesheet">
+  <style type="text/css"></style>
+  <script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/0e7373c2/www-widgetapi.vflset/www-widgetapi.js" async></script>
+  <script charset="utf-8" src="/static/js/9.36bb3202.chunk.js"></script>
+  <link rel="stylesheet" type="text/css" href="/static/css/HomePage.872a304b.chunk.css">
+  <script charset="utf-8" src="/static/js/HomePage.e4084496.chunk.js"></script>
+  <script charset="utf-8" src="/static/js/3.de9d22f8.chunk.js"></script>
+  <link rel="stylesheet" type="text/css" href="/static/css/UserLayout.c5942216.chunk.css">
+  <script charset="utf-8" src="/static/js/UserLayout.1e0b4497.chunk.js"></script>
+  <style data-emotion="css"></style>
+  <script charset="utf-8" src="/static/js/1.cd4c07b1.chunk.js"></script>
+  <script charset="utf-8" src="/static/js/65.f575d051.chunk.js"></script>
+  <link rel="stylesheet" type="text/css" href="/static/css/UserRouteComponent.d3498c7b.chunk.css">
+  <script charset="utf-8" src="/static/js/UserRouteComponent.6aaae27a.chunk.js"></script>
+  <script charset="utf-8" src="/static/js/2.869927ed.chunk.js"></script>
+  <link rel="stylesheet" type="text/css" href="/static/css/LectureInfo.eb1e9892.chunk.css">
+  <script charset="utf-8" src="/static/js/LectureInfo.4ac2854f.chunk.js"></script>
+  <script referrerpolicy="origin" type="application/javascript" id="tiny-script_47859463411657406115486" src="https://cdn.tiny.cloud/1/gjthkuiwy8v3y8n5qwgrbzcisqkcqrz7s9y6z9nbwfxw7hrj/tinymce/5/tinymce.min.js"></script>
+  <script type="text/javascript" charset="utf8" async src="https://www.youtube.com/iframe_api"></script>
+  <link rel="stylesheet" type="text/css" href="/static/css/Task.97360551.chunk.css">
+  <script charset="utf-8" src="/static/js/Task.c9010ed4.chunk.js"></script>
+  <link rel="stylesheet" type="text/css" href="/static/css/64.109ecbfc.chunk.css">
+  <script charset="utf-8" src="/static/js/64.c43e97a2.chunk.js"></script>
+  <link rel="stylesheet" type="text/css" href="/static/css/Chat.ef87fea7.chunk.css">
+  <script charset="utf-8" src="/static/js/Chat.cc308e77.chunk.js"></script>
+</head>
+<body cz-shortcut-listen="true">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root" style="height: 727px">
+    <div class="user-layout" style="height: 727px">
+      <div class="user-layout-content scroll-anchor" style="height: 727px">
+        <div class="lectures-view" style="height: 727px">
+          <div class="lecture" style="height: 727px">
+            <iframe title="lecture-single" width="100%" height="100%" frameborder="none" src="https://binary-studio-academy.github.io/stage-2/lectures/express-yourself-with-nodejs/"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script async src="https://www.google-analytics.com/analytics.js"></script> 
+  <script>
+
+  !function(e){function t(t){for(var r,c,i=t[0],d=t[1],s=t[2],f=0,l=[];f<i.length;f++)c=i[f],Object.prototype.hasOwnProperty.call(o,c)&&o[c]&&l.push(o[c][0]),o[c]=0;for(r in d)Object.prototype.hasOwnProperty.call(d,r)&&(e[r]=d[r]);for(u&&u(t);l.length;)l.shift()();return n.push.apply(n,s||[]),a()}function a(){for(var e,t=0;t<n.length;t++){for(var a=n[t],r=!0,c=1;c<a.length;c++){var d=a[c];0!==o[d]&&(r=!1)}r&&(n.splice(t--,1),e=i(i.s=a[0]))}return e}var r={},c={59:0},o={59:0},n=[];function i(t){if(r[t])return r[t].exports;var a=r[t]={i:t,l:!1,exports:{}};return e[t].call(a.exports,a,a.exports,i),a.l=!0,a.exports}i.e=function(e){var t=[];c[e]?t.push(c[e]):0!==c[e]&&{0:1,4:1,5:1,10:1,11:1,12:1,13:1,14:1,16:1,17:1,18:1,20:1,22:1,23:1,24:1,25:1,26:1,27:1,28:1,29:1,30:1,31:1,32:1,33:1,34:1,35:1,36:1,37:1,38:1,39:1,40:1,41:1,42:1,43:1,44:1,45:1,46:1,47:1,48:1,49:1,50:1,51:1,52:1,53:1,54:1,55:1,56:1,57:1,62:1,63:1,64:1,66:1}[e]&&t.push(c[e]=new Promise((function(t,a){for(var r="static/css/"+({4:"AcademyStage",5:"QuestionList",10:"AcademiesDashboard",11:"Academy",12:"AcademyClosed",13:"AcademyStages",14:"AcademyStatistic",15:"AddAcademyStageContainer",16:"AddNewStage",17:"AdminLayout",18:"Auth",19:"CertificatePageContainer",20:"Chat",21:"ConfirmParticipation",22:"ConfirmRegistration",23:"EditProfile",24:"ForgotPassword",25:"Form",26:"FormPage",27:"HomePage",28:"HomeworkResponse",29:"HomeworkReviews",30:"LectureForm",31:"LectureInfo",32:"LectureList",33:"LectureView",34:"Login",35:"MailTemplates",36:"MarkRating",37:"MarkdownPreview",38:"MaterialGroupList",39:"MaterialList",40:"NotFoundPage",41:"Project",42:"ProjectInfo",43:"ProjectMarks",44:"ProjectStatistics",45:"PublicPage",46:"Questions",47:"Register",48:"RegisterTeacher",49:"SelectNextAcademy",50:"SeparateHomeworkReviews",51:"Statistic",52:"SystemSettings",53:"Task",54:"TestList",55:"UserBlocked",56:"UserLayout",57:"UserRouteComponent"}[e]||e)+"."+{0:"f91e34dd",1:"31d6cfe0",2:"31d6cfe0",3:"31d6cfe0",4:"138ad97f",5:"b6b8a137",6:"31d6cfe0",7:"31d6cfe0",8:"31d6cfe0",9:"31d6cfe0",10:"4003b33a",11:"7b818a3a",12:"6ea1b06d",13:"14d156c8",14:"45247e00",15:"31d6cfe0",16:"b73ed2a7",17:"3d6ce89a",18:"22c1e55a",19:"31d6cfe0",20:"ef87fea7",21:"31d6cfe0",22:"23bde255",23:"5019e698",24:"1da3a823",25:"c2e168cb",26:"6443669d",27:"872a304b",28:"ae76e4fe",29:"bfda57ed",30:"32ba5658",31:"eb1e9892",32:"291ce065",33:"050b5c0a",34:"33dd8946",35:"12cb11d5",36:"03339edd",37:"72b1ca8a",38:"79a5e048",39:"0df7a505",40:"967507cf",41:"789e9bf8",42:"bafec08c",43:"1c250a7b",44:"7455aafd",45:"75b7213d",46:"82f9aa3e",47:"ffcc0d62",48:"80ecbf96",49:"b88102e1",50:"cd844943",51:"81778e3f",52:"a06fdcc6",53:"97360551",54:"150f233b",55:"131c97f5",56:"c5942216",57:"d3498c7b",60:"31d6cfe0",62:"f7acdfe6",63:"c5e522c8",64:"109ecbfc",65:"31d6cfe0",66:"594f2fe4",67:"31d6cfe0"}[e]+".chunk.css",o=i.p+r,n=document.getElementsByTagName("link"),d=0;d<n.length;d++){var s=(u=n[d]).getAttribute("data-href")||u.getAttribute("href");if("stylesheet"===u.rel&&(s===r||s===o))return t()}var f=document.getElementsByTagName("style");for(d=0;d<f.length;d++){var u;if((s=(u=f[d]).getAttribute("data-href"))===r||s===o)return t()}var l=document.createElement("link");l.rel="stylesheet",l.type="text/css",l.onload=t,l.onerror=function(t){var r=t&&t.target&&t.target.src||o,n=new Error("Loading CSS chunk "+e+" failed.\n("+r+")");n.code="CSS_CHUNK_LOAD_FAILED",n.request=r,delete c[e],l.parentNode.removeChild(l),a(n)},l.href=o,document.getElementsByTagName("head")[0].appendChild(l)})).then((function(){c[e]=0})));var a=o[e];if(0!==a)if(a)t.push(a[2]);else{var r=new Promise((function(t,r){a=o[e]=[t,r]}));t.push(a[2]=r);var n,d=document.createElement("script");d.charset="utf-8",d.timeout=120,i.nc&&d.setAttribute("nonce",i.nc),d.src=function(e){return i.p+"static/js/"+({4:"AcademyStage",5:"QuestionList",10:"AcademiesDashboard",11:"Academy",12:"AcademyClosed",13:"AcademyStages",14:"AcademyStatistic",15:"AddAcademyStageContainer",16:"AddNewStage",17:"AdminLayout",18:"Auth",19:"CertificatePageContainer",20:"Chat",21:"ConfirmParticipation",22:"ConfirmRegistration",23:"EditProfile",24:"ForgotPassword",25:"Form",26:"FormPage",27:"HomePage",28:"HomeworkResponse",29:"HomeworkReviews",30:"LectureForm",31:"LectureInfo",32:"LectureList",33:"LectureView",34:"Login",35:"MailTemplates",36:"MarkRating",37:"MarkdownPreview",38:"MaterialGroupList",39:"MaterialList",40:"NotFoundPage",41:"Project",42:"ProjectInfo",43:"ProjectMarks",44:"ProjectStatistics",45:"PublicPage",46:"Questions",47:"Register",48:"RegisterTeacher",49:"SelectNextAcademy",50:"SeparateHomeworkReviews",51:"Statistic",52:"SystemSettings",53:"Task",54:"TestList",55:"UserBlocked",56:"UserLayout",57:"UserRouteComponent"}[e]||e)+"."+{0:"e1caa427",1:"cd4c07b1",2:"869927ed",3:"de9d22f8",4:"8c22e2a9",5:"59a20af5",6:"5d42078a",7:"e5cff1e8",8:"e79ee0b3",9:"36bb3202",10:"b77cc19a",11:"837404a3",12:"33d7fb9d",13:"aef6c055",14:"819d8125",15:"83aab206",16:"ffab3643",17:"8a047e68",18:"466a3733",19:"8bb1cd5b",20:"cc308e77",21:"76cdb24a",22:"2f07ee7c",23:"f598d6af",24:"bd33bedc",25:"6cf4b004",26:"008590e7",27:"e4084496",28:"1244277f",29:"82f79e2a",30:"29a9eab7",31:"4ac2854f",32:"3677f8b9",33:"17be1d42",34:"52f3d0ee",35:"58895adc",36:"35d2ca34",37:"e809ae9e",38:"aed8e1f6",39:"ac26c683",40:"91acf101",41:"98dfd3cf",42:"9c030c4c",43:"957c2221",44:"03518add",45:"cdba1cc0",46:"ea8d6193",47:"d9bb1a9b",48:"a1c742cb",49:"967d1b59",50:"1838c046",51:"6c97e284",52:"01e505eb",53:"c9010ed4",54:"e012d4ed",55:"63ac6a8a",56:"1e0b4497",57:"6aaae27a",60:"21093172",62:"ea571755",63:"0c5786f4",64:"c43e97a2",65:"f575d051",66:"561cb3b7",67:"b85424c4"}[e]+".chunk.js"}(e);var s=new Error;n=function(t){d.onerror=d.onload=null,clearTimeout(f);var a=o[e];if(0!==a){if(a){var r=t&&("load"===t.type?"missing":t.type),c=t&&t.target&&t.target.src;s.message="Loading chunk "+e+" failed.\n("+r+": "+c+")",s.name="ChunkLoadError",s.type=r,s.request=c,a[1](s)}o[e]=void 0}};var f=setTimeout((function(){n({type:"timeout",target:d})}),12e4);d.onerror=d.onload=n,document.head.appendChild(d)}return Promise.all(t)},i.m=e,i.c=r,i.d=function(e,t,a){i.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:a})},i.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.t=function(e,t){if(1&t&&(e=i(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var a=Object.create(null);if(i.r(a),Object.defineProperty(a,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var r in e)i.d(a,r,function(t){return e[t]}.bind(null,r));return a},i.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return i.d(t,"a",t),t},i.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},i.p="/",i.oe=function(e){throw console.error(e),e};var d=this["webpackJsonpbinary-studio-academy-client"]=this["webpackJsonpbinary-studio-academy-client"]||[],s=d.push.bind(d);d.push=t,d=d.slice();for(var f=0;f<d.length;f++)t(d[f]);var u=s;a()}([])
+  </script> 
+  <script src="/static/js/61.87130d19.chunk.js"></script> 
+  <script src="/static/js/main.6cfd6dad.chunk.js"></script>
+</body>
+</html>

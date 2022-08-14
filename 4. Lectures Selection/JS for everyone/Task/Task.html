@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="lecture-task-part">
+        <div class="markdown-homework">
+          <div class="markdown-view">
+            <p>In the <strong>FighterService</strong> class, create a method to get detailed information about the fighter. Add the ability to view it — to accomplish this, implement the function <strong>getFighterInfo</strong>, which would process the click on the fighter. Display data using the <strong>createFighterPreview</strong> function.</p>
+            <p>The battle process will be started using the <strong>Fight</strong> button. In the <strong>renderArena</strong> function, call the <strong>fight</strong> function and display the winner at the end of the battle using the <strong>showWinnerModal</strong> function.</p>
+            <p>The <strong>fight</strong> function must return a <strong>Promise</strong> that will be fulfilled if one of the fighters wins.</p>
+            <p>Players beat each other with the <strong>A</strong> (first fighter) and <strong>J</strong> (second fighter) keys. Fighters can block strikes with the <strong>D</strong> and <strong>L</strong> keys, respectively, in which case the fighter evades the attack. Also, a fighter cannot strike if he is in a block.</p>
+            <p>The fighter's health is reduced by the amount of damage inflicted by the enemy. It can be determined using the <strong>getDamage</strong> function, which will return <strong>getHitPower - getBlockPower</strong> (or 0 if the fighter "dodged" the strike completely, i.e. the force of the block is greater than the force of the strike).</p>
+            <p>Also, the damage must be reflected using the health indicator, which is located above the fighters. It is enough to reduce the width of the <strong>health-bar</strong> element.</p>
+            <p>** Implement functions: **</p>
+            <ul>
+              <li><strong>getHitPower</strong>, which would calculate the force of the strike (the amount of damage to the enemy's health) according to the formula <strong>power = attack * criticalHitChance;</strong>, where **criticalHitChance ** is a random number from 1 to 2,</li>
+              <li><strong>getBlockPower</strong>, which would calculate the strength of the block (shock absorption of the enemy) according to the formula <strong>power = defense * dodgeChance;</strong>, where <strong>dodgeChance</strong> is a random number from 1 to 2. You do not need to round the results of these functions.</li>
+            </ul>
+            <p>Fighters can also deliver critical strikes that cannot be blocked and are calculated by the formula <strong>2 * attack</strong>, where <strong>attack</strong> is the characteristic of the fighter. In order to deliver such a strike to a fighter, you need to press 3 corresponding keys at the same time, which are specified in the file <strong>controls.js</strong>. This strike can be applied no more often than every 10 seconds.</p>
+            <p>Here is a link to the project starter - https://github.com/binary-studio-academy/stage-2-es6-for-everyone</p>
+            <p><strong>Note:</strong> Existing functionality and code do not need to be changed, as the work will be checked by self-tests.</p>
+            <p>Be sure to submit your homework at <strong>Bitbucket</strong>: https://bitbucket.org. You don't need to create pull-requests, tasks, projects this time - just work with Git itself.</p>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
